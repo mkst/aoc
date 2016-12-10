@@ -44,7 +44,7 @@ with open("input/04.txt") as input:
         decrypted += " "
       else:
         loc = alphabet.find(r)
-        decrypted += alphabet[(loc + sector) % 26]
+        decrypted += alphabet[(loc + sector) % len(alphabet)]
 
     if decrypted == "northpole object storage":
       northpole_objects = sector

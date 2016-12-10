@@ -7,18 +7,20 @@ def solve(keypad, instructions, start_row, start_col):
 
   code = []
 
+  rc = len(keypad) - 1
+
   for instruction in instructions:
     if instruction == "U":
       if row > 0 and (keypad[row-1][col] != None):
         row -= 1
     elif instruction == "D":
-      if row < 4 and (keypad[row+1][col] != None):
+      if row < rc and (keypad[row+1][col] != None):
         row += 1
     elif instruction == "L":
       if col > 0 and (keypad[row][col-1] != None):
         col -= 1
     elif instruction == "R":
-      if col < 4 and (keypad[row][col+1] != None):
+      if col < rc and (keypad[row][col+1] != None):
         col += 1
     elif instruction == "\n":
       code.append(keypad[row][col])

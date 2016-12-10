@@ -3,7 +3,7 @@
 import re
 
 with open("input/03.txt", "r") as input:
-  instructions = input.read().split("\n")
+  instructions = input.read().split("\n")[:-1]
   valid_1 = valid_2 = 0
 
   a = []
@@ -11,24 +11,21 @@ with open("input/03.txt", "r") as input:
   c = []
 
   for instruction in instructions:
-    sides = re.findall(" [0-9]+", instruction)
-    if len(sides) == 3:
-      sides = map(lambda x: int(x), sides)
+    sides = [ int(x) for x in re.findall(" [0-9]+", instruction) ]
 
-      # this is for part 2
-      a.append(sides[0])
-      b.append(sides[1])
-      c.append(sides[2])
+    # this is for part 2
+    a.append(sides[0])
+    b.append(sides[1])
+    c.append(sides[2])
 
-      # solve part 1
-      sides.sort()
-      if sides[0] + sides[1] > sides[2]:
-        valid_1 += 1
+    # solve part 1
+    sides.sort()
+    if sides[0] + sides[1] > sides[2]:
+      valid_1 += 1
 
   print "Part 1:",valid_1
 
-  i = 0
-  while ( i < len(a)):
+  for i in range(0, len(a), 3):
     # row a
     sides = a[i:i+3]
     sides.sort()
@@ -46,7 +43,5 @@ with open("input/03.txt", "r") as input:
     sides.sort()
     if sides[0] + sides[1] > sides[2]:
       valid_2 += 1
-
-    i += 3
 
   print "Part 2:",valid_2
