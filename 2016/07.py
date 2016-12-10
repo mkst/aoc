@@ -1,9 +1,8 @@
-with open ("input/07.txt") as input:
-  instructions = input.read()
+with open ("input/07.txt") as instructions:
 
   part_1 = part_2 = 0
 
-  for instruction in instructions.split("\n"):
+  for instruction in instructions:
     abba_bad = abba_good = False
 
     in_square_brackets = False

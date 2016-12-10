@@ -2,8 +2,7 @@
 
 import re
 
-with open("input/03.txt", "r") as input:
-  instructions = input.read().split("\n")[:-1]
+with open("input/03.txt", "r") as instructions:
   valid_1 = valid_2 = 0
 
   a = []

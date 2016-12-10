@@ -1,13 +1,12 @@
 import re
 
-with open("input/04.txt") as input:
-  rooms = input.read()
+with open("input/04.txt") as rooms:
 
   sectors = northpole_objects = 0
 
   alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-  for room in rooms.split("\n")[:-1]:
+  for room in rooms:
 
     regex = re.search("([a-z\-]*)-([0-9]+)\[([a-z]*)\]", room)
 

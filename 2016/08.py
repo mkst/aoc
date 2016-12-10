@@ -4,8 +4,7 @@ def rotate(row, n):
   i = n % len(row)
   return row[-i:] + row[:-i]
 
-with open("input/08.txt") as input:
-  instructions = input.read().split("\n")[:-1]
+with open("input/08.txt") as instructions:
 
   width =  50
   height = 6

@@ -1,15 +1,16 @@
-with open("input/06.txt") as input:
-  instructions = input.read()
+with open("input/06.txt") as instructions:
 
   transposed = []
 
   part_1 = part_2 = ""
 
-  for instruction in instructions.split("\n")[:-1]:
+  first = True
+  for instruction in instructions:
 
     # intialise transposed on first instruction
-    if len(transposed) == 0:
+    if first:
       transposed = [ {} for x in range(0, len(instruction)) ]
+      first = False
   
     for i in range(0, len(instruction)):
       c = instruction[i]
