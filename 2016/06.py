@@ -1,3 +1,5 @@
+# --- Day 6: Signals and Noise ---
+
 with open("input/06.txt") as instructions:
 
   transposed = []

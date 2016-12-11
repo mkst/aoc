@@ -1,3 +1,5 @@
+# --- Day 4: Security Through Obscurity ---
+
 import re
 
 with open("input/04.txt") as rooms:
