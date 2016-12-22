@@ -20,7 +20,7 @@ Advent Of Code (http://adventofcode.com/) solutions
  - `__` Day 15: Timing is Everything
  - `**` Day 16: Dragon Checksum
  - `__` Day 17: Two Steps Forward
- - `__` Day 18: Like a Rogue
+ - `**` Day 18: Like a Rogue
  - `*_` Day 19: An Elephant Named Joseph
  - `**` Day 20: Firewall Rules
  - `**` Day 21: Scrambled Letters and Hash
