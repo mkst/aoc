@@ -23,7 +23,7 @@ Advent Of Code (http://adventofcode.com/) solutions
  - `__` Day 18: Like a Rogue
  - `*_` Day 19: An Elephant Named Joseph
  - `**` Day 20: Firewall Rules
- - `__` Day 21: Scrambled Letters and Hash
+ - `**` Day 21: Scrambled Letters and Hash
  - `*_` Day 22: Grid Computing
  - `__` Day 23:
  - `__` Day 24:
