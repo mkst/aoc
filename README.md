@@ -17,7 +17,7 @@ Advent Of Code (http://adventofcode.com/) solutions
  - `**` Day 12: Leonardo's Monorail
  - `**` Day 13: A Maze of Twisty Little Cubicles
  - `**` Day 14: One-Time Pad 
- - `__` Day 15: Timing is Everything
+ - `**` Day 15: Timing is Everything
  - `**` Day 16: Dragon Checksum
  - `__` Day 17: Two Steps Forward
  - `**` Day 18: Like a Rogue
