@@ -1,3 +1,5 @@
+# --- Day 18: Like a Rogue ---
+
 def solve(instruction, max_rows):
   rows = [instruction]
   length = len(instruction)

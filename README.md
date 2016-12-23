@@ -25,6 +25,6 @@ Advent Of Code (http://adventofcode.com/) solutions
  - `**` Day 20: Firewall Rules
  - `**` Day 21: Scrambled Letters and Hash
  - `*_` Day 22: Grid Computing
- - `**` Day 23:
+ - `**` Day 23: Safe Cracking
  - `__` Day 24:
  - `__` Day 25:

@@ -1,3 +1,5 @@
+# --- Day 14: One-Time Pad ---
+
 import hashlib
 
 def generate_hashes(count, hash_count, salt, key):
