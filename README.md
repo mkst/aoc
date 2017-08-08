@@ -21,10 +21,10 @@ Advent Of Code (http://adventofcode.com/) solutions
  - `**` Day 16: Dragon Checksum
  - `__` Day 17: Two Steps Forward
  - `**` Day 18: Like a Rogue
- - `*_` Day 19: An Elephant Named Joseph
+ - `**` Day 19: An Elephant Named Joseph
  - `**` Day 20: Firewall Rules
  - `**` Day 21: Scrambled Letters and Hash
  - `*_` Day 22: Grid Computing
  - `**` Day 23: Safe Cracking
- - `__` Day 24:
- - `__` Day 25:
+ - `__` Day 24: Air Duct Spelunking
+ - `* ` Day 25: Clock Signal
