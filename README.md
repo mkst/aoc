@@ -46,7 +46,7 @@ Advent Of Code (http://adventofcode.com/) solutions in a mixture of Python and Q
  - `**` Day 13: Knights of the Dinner Table
  - `**` Day 14: Reindeer Olympics
  - `__` Day 15: Science for Hungry People
- - `__` Day 16: Aunt Sue
+ - `**` Day 16: Aunt Sue
  - `**` Day 17: No Such Thing as Too Much
  - `__` Day 18: Like a GIF For Your Yard
  - `__` Day 19: Medicine for Rudolph
