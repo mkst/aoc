@@ -45,11 +45,11 @@ Advent Of Code (http://adventofcode.com/) solutions in a mixture of Python and Q
  - `*_` Day 12: JSAbacusFramework.io
  - `**` Day 13: Knights of the Dinner Table
  - `**` Day 14: Reindeer Olympics
- - `__` Day 15: Science for Hungry People
+ - `**` Day 15: Science for Hungry People
  - `**` Day 16: Aunt Sue
  - `**` Day 17: No Such Thing as Too Much
  - `__` Day 18: Like a GIF For Your Yard
- - `__` Day 19: Medicine for Rudolph
+ - `*_` Day 19: Medicine for Rudolph
  - `__` Day 20: Infinite Elves and Infinite Houses
  - `__` Day 21: RPG Simulator 20XX
  - `__` Day 22: Wizard Simulator 20XX
