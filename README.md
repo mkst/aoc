@@ -4,6 +4,7 @@ Advent Of Code (http://adventofcode.com/) solutions in a mixture of Python and Q
 **2017**
 
   - `**` Day 1: Inverse Captcha
+  - `**` Day 2: Corruption Checksum
 
 **2016**
 
