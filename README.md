@@ -5,6 +5,8 @@
 
   - `**` Day 1: Inverse Captcha ([.q](2017/01.q) | [.py](2017/01.py))
   - `**` Day 2: Corruption Checksum ([.q](2017/02.q) | [.py](2017/02.py))
+  - `*_` Day 3: Spiral Memory ([.q](2017/03.q))
+  - `**` Day 4: High-Entropy Passphrases ([.q](2017/04.q))
 
 **2016**
 
