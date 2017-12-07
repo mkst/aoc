@@ -9,6 +9,7 @@
   - `**` Day 4: High-Entropy Passphrases ([.q](2017/04.q) | [.py](2017/04.py))
   - `**` Day 5: A Maze of Twisty Trampolines, All Alike ([.q](2017/05.q))
   - `**` Day 6: Memory Reallocation ([.q](2017/06.q))
+  - `**` Day 7: Recursive Circus ([.q](2017/07.q))
 
 **2016**
 
