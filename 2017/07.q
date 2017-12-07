@@ -1,32 +1,37 @@
 / --- Day 7: Recursive Circus ---
 
-t:`node xkey flip `node`weight`parent!"sjs"$\:();
+t:`n xkey flip `n`w`t`p!"sjjs"$\:(); / node, weight, total, parent
 
-{ if[x like "*->*";
-    p:`$1_'"," vs last x:"->" vs x;
-    n:`$first " " vs x:-1_first x;
-    { `t upsert (y;first exec weight from t where node=y;x) }[n;] each p
-    ];
-  w:"J"$last x:" " vs x except "()";
-  n:`$first x;
-  `t upsert (n;w;first exec parent from t where node=n)
+{
+  x:" " vs x except ",()";
+  nd:`$x 0;   / node
+  wt:"J"$x 1; / weight
+  `t upsert (nd;wt;0;first exec p from t where n=nd);
+  if[2<count x;
+    { `t upsert (y;first exec w from t where n=y;0;x) }[nd;] each `$3_x;
+  ]
   } each read0 `:input/07.txt;
 
-exec first node from t where null parent
+/ find node without a parent
+exec first n from t where null p
 /`hlqnsbe
 
-weights:`node xkey flip `node`nweight!"sj"$\:();
+{
+  $[count s:select from t where p=x;
+    [wt:(first exec w from t where n=x)+sum .z.s each exec n from s;update t:wt from `t where n=x;wt];
+    first exec w from t where n=x]
+  }`;
 
-calcweights:{
-  $[count s:select from t where parent = x;
-    [`weights insert (x;w:(first exec weight from t where node=x)+sum .z.s each exec node from s);w];
-    first exec weight from t where node=x]
-  }
-
-calcweights `;
-
-s:delete eq from select from (select node, parent, nweight, eq:{ all 0=1_deltas x } each nweight from select node, nweight by parent from weights lj t) where not eq;
-s:select node, nweight from s where not any each node in\:raze exec parent from s;
-s:first exec { (first x where d=m;m:max 1 _ d:deltas y) }'[node;nweight] from s;
-neg[last s]+first exec weight from t where node=first s
+/ delete leaves
+s:delete from t where t=0;
+/ add eq column, true if all weights are equal
+s:select n, t, eq:{ all 0=1_deltas x }t by p from s;
+/ remove entries with equal weights
+s:select from s where not eq;
+/ remove entries that contain a parent
+s:select from s where not any each n in\:raze exec p from s;
+/ find the node with the difference and what the difference is
+s:first exec { (first x where d=m;m:max 1 _ d:deltas y) }'[n;t] from s;
+/ calculate the correct weight
+neg[last s]+first exec w from t where n=first s
 /1993
