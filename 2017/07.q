@@ -6,9 +6,9 @@ t:`n xkey flip `n`w`t`p!"sjjs"$\:(); / node, weight, total, parent
   x:" " vs x except ",()";
   nd:`$x 0;   / node
   wt:"J"$x 1; / weight
-  `t upsert (nd;wt;0;first exec p from t where n=nd);
+  `t upsert (nd;wt;0;t[nd;`p]);
   if[2<count x;
-    { `t upsert (y;first exec w from t where n=y;0;x) }[nd;] each `$3_x;
+    { `t upsert (y;t[y;`w];0;x) }[nd;] each `$3_x;
   ]
   } each read0 `:input/07.txt;
 
@@ -17,9 +17,12 @@ exec first n from t where null p
 /`hlqnsbe
 
 {
-  $[count s:select from t where p=x;
-    [wt:(first exec w from t where n=x)+sum .z.s each exec n from s;update t:wt from `t where n=x;wt];
-    first exec w from t where n=x]
+  wt:t[x;`w];
+  if[count s:select from t where p=x;
+    wt+:sum .z.s each exec n from s;
+    update t:wt from `t where n=x
+    ];
+  :wt
   }`;
 
 / delete leaves
