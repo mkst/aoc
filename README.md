@@ -13,6 +13,7 @@
   - `**` Day 8: I Heard You Like Registers ([.q](2017/08.q))
   - `**` Day 9: Stream Processing ([.q](2017/09.q))
   - `**` Day 10: Knot Hash ([.q](2017/10.q))
+  - `**` Day 11: Hex Ed ([.q](2017/11.q))
 
 **2016**
 
