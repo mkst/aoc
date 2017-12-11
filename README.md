@@ -11,7 +11,7 @@
   - `**` Day 6: Memory Reallocation ([.q](2017/06.q))
   - `**` Day 7: Recursive Circus ([.q](2017/07.q))
   - `**` Day 8: I Heard You Like Registers ([.q](2017/08.q))
-  - `__` Day 9: Stream Processing
+  - `**` Day 9: Stream Processing ([.q](2017/09.q))
   - `**` Day 10: Knot Hash ([.q](2017/10.q))
 
 **2016**
