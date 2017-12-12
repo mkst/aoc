@@ -1,3 +1,5 @@
+/--- Day 16: Aunt Sue ---
+
 / initialise empty table
 sues:`sue xkey flip `sue`children`cats`samoyeds`pomeranians`akitas`vizslas`goldfish`trees`cars`perfumes!"iiiiiiiiiii"$\:()
 / add sues 1-->500, null for unknowns
@@ -33,3 +35,4 @@ res:select from sues where children in (0N;3),
                           perfumes in (0N;1);
 
 first first key res
+/405

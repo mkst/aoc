@@ -16,7 +16,7 @@ light:{[i] $["n"=a:i 6;
     tog . sanitize i]
   };
 
-light each read0 `:input/06.txt;
+light each r:read0 `:input/06.txt;
 sum sum grid
 /377891
 
@@ -26,6 +26,6 @@ on:{  grid[range x;range y]+:1 };
 off:{ grid[range x;range y]:0|grid[range x;range y]-1};
 tog:{ grid[range x;range y]+:2 };
 
-light each read0 `:input/06.txt;
+light each r;
 sum sum grid
 /14110788

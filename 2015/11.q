@@ -12,4 +12,6 @@ checkpass:{
  }
 
 0N!res:{ increment x }/[{ not checkpass x };] first read0 `:input/11.txt;
+/vzbxxyzz
 { increment x }/[{ not checkpass x };increment res]
+/vzcaabcc
