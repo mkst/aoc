@@ -15,6 +15,7 @@
   - `**` Day 10: Knot Hash ([.q](2017/10.q))
   - `**` Day 11: Hex Ed ([.q](2017/11.q))
   - `**` Day 12: Digital Plumber ([.q](2017/12.q))
+  - `**` Day 13: Packet Scanners ([.q](2017/13.q))
 
 **2016**
 
