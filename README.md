@@ -19,10 +19,10 @@
 
 **2016**
 
- - `**` Day 1: No Time for a Taxicab ([.py](2016/01.py))
+ - `**` Day 1: No Time for a Taxicab ([.q](2016/01.q) | [.py](2016/01.py))
  - `**` Day 2: Bathroom Security ([.py](2016/02.py))
- - `**` Day 3: Squares With Three Sides ([.py](2016/03.py))
- - `**` Day 4: Security Through Obscurity ([.py](2016/04.py))
+ - `**` Day 3: Squares With Three Sides ([.q](2016/03.q) | [.py](2016/03.py))
+ - `**` Day 4: Security Through Obscurity ([.q](2016/03.q) | [.py](2016/04.py))
  - `**` Day 5: How About a Nice Game of Chess? ([.py](2016/05.py))
  - `**` Day 6: Signals and Noise ([.py](2016/06.py))
  - `**` Day 7: Internet Protocol Version 7 ([.py](2016/07.py))
