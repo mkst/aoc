@@ -16,6 +16,8 @@
   - `**` Day 11: Hex Ed ([.q](2017/11.q))
   - `**` Day 12: Digital Plumber ([.q](2017/12.q))
   - `**` Day 13: Packet Scanners ([.q](2017/13.q))
+  - `*_` Day 14: Disk Defragmentation ([.q](2017/14.q))
+  - `**` Day 15: Dueling Generators ([.q](2017/15.q))
 
 **2016**
 
