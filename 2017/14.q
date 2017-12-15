@@ -2,5 +2,5 @@
 
 \l 10.q
 
-sum raze h:hash each (first read0 `:input/14.txt),/:"-",'string til 128
+sum h:raze raze 0b vs''hash each (first read0 `:input/14.txt),/:"-",'string til 128
 /8214
