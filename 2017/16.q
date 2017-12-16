@@ -5,7 +5,7 @@ dance:{[d;x]
     neg["J"$1_x] rotate d;
     "x"=x 0;
     @[d;p;:;reverse d p:"J"$"/"vs 1_x];
-    @[d;d?p;:;d reverse d?p:"/"vs 1_x]
+    @[d;d?p;:;reverse p:"/"vs 1_x]
     ]
   };
 
