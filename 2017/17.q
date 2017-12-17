@@ -1,12 +1,12 @@
 /--- Day 17: Spinlock ---
 
-s:"J"$first read0 `:input/17.txt;
+s:"J"$first read0 `:input/17.txt
 p:1 / position
 
 spinlock:{
   $[y=p::1+(p+s) mod y;
     x,y;
-    (p#x),y,(neg[y-p]#x)
+    (p#x),y,(p-y)#x
     ]
   };
 
