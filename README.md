@@ -19,6 +19,7 @@
   - `*_` Day 14: Disk Defragmentation ([.q](2017/14.q))
   - `**` Day 15: Dueling Generators ([.q](2017/15.q))
   - `**` Day 16: Permutation Promenade ([.q](2017/16.q))
+  - `**` Day 17: Spinlock ([.q](2017/17.q))
 
 **2016**
 
