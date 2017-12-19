@@ -20,6 +20,8 @@
   - `**` Day 15: Dueling Generators ([.q](2017/15.q))
   - `**` Day 16: Permutation Promenade ([.q](2017/16.q))
   - `**` Day 17: Spinlock ([.q](2017/17.q))
+  - `*_` Day 18: Duet ([.q](2017/18.q))
+  - `**` Day 19: A Series of Tubes ([.q](2017/19.q))
 
 **2016**
 
