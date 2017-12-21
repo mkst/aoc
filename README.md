@@ -23,6 +23,7 @@
   - `**` Day 18: Duet ([.q](2017/18.q))
   - `**` Day 19: A Series of Tubes ([.q](2017/19.q))
   - `**` Day 20: Particle Swarm ([.q](2017/20.q))
+  - `**` Day 21: Fractal Art  ([.q](2017/21.q))
 
 **2016**
 
