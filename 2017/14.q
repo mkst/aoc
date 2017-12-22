@@ -5,8 +5,8 @@
 sum raze h:raze each 0b vs''hash each (first read0 `:input/14.txt),/:"-",'string til 128
 /8214
 
-v:(enlist 0N 0N)!enlist 0N; / visited, add dummy value to setup key
-g:0;                        / group id
+v:(`u#enlist 0N 0N)!enlist 0N; / visited, add dummy value to setup key
+g:0;                           / group id
 
 f:{
   if[not h[x;y];
