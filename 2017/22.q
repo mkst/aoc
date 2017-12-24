@@ -49,6 +49,6 @@ On[" ."]:{
   d::"LRDU""UDLR"?d / turn left
   };
 
-\t do[10000000;burst[]];
+do[10000000;burst[]];
 i
 /2512599
