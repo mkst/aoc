@@ -4,8 +4,7 @@ l:0; / max length
 
 bridge:{
   w:y~\:2#-1#x;
-  res: /({bridge[x;y _ first where y~\:-2#x]}[;y] each x,/:y where w),
-      $[count c:x,/:y where w;.z.s'[x,/:y where w;y _' where y~\:-2#c];()],
+  res:({bridge[x;y _ first where y~\:-2#x]}[;y] each x,/:y where w),
       ({bridge[x;y _ first where y~\:-2#x]}[;y] each x,/:y where not[w] and y[;0]=last last x),
       ({bridge[x;y _ first where y~\:reverse -2#x]}[;y] each x,/:reverse each y where not[w] and y[;1]=last last x);
   $[count res;res;[if[l<=c:count x;l::c];x]]
