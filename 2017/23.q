@@ -16,9 +16,7 @@ p:0;                                       / initialise pointer to zero
 while[p<count i;p+:On[o 0] . 1_ o:i p];m   / run program
 /3025
 
-pun:{last {$[count F:first x;(F where not 0=mod[F;first F];last[x],first F);x]}/[(2+til x-2;())]};
-n:105700+17*til 1+div[122700-105700;17];
-count n except pun 122700+1
+sum { any 0=x mod 2_til floor sqrt x } each 105700+17*til 1+div[122700-105700;17]
 /915
 
 \
