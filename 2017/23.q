@@ -16,7 +16,7 @@ p:0;                                       / initialise pointer to zero
 while[p<count i;p+:On[o 0] . 1_ o:i p];m   / run program
 /3025
 
-sum { any 0=x mod 2_til floor sqrt x } each 105700+17*til 1+div[122700-105700;17]
+sum { any 0=x mod 1_1+til floor sqrt x } each 105700+17*til 1+div[122700-105700;17]
 /915
 
 \
