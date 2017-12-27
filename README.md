@@ -27,6 +27,7 @@
   - `**` Day 22: Sporifica Virus ([.q](2017/22.q))
   - `**` Day 23: Coprocessor Conflagration ([.q](2017/23.q))
   - `**` Day 24: Electromagnetic Moat ([.q](2017/24.q))
+  - `**` Day 25: The Halting Problem ([.q](2017/25.q))
 
 **2016**
 
