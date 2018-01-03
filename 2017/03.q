@@ -1,30 +1,23 @@
 /--- Day 3: Spiral Memory ---
 
-/A016754
-dist:{ last {(1+f;last[x],(1+2*f)*(1+2*f:first x))}/[{[x;y]last last y < x}[x;];(1;enlist 1)] }
-/distance from bottom right corner
-fbrc:{ $[x=last c:dist x;0;x-last -1_c] }
-
-{(2*-1+count dist x)-mod[fbrc x;floor sqrt x]} 368078 / FIXME: doesnt work for all examples (left/right of midpoint?)
+/OEIS A016754
+A016754:{ x*(x:1+2*x) }
+{ ring:{ { x+1 }/[{[MAX;x] MAX > A016754 x}[x];0] } x;
+  ring + abs ring - (x - A016754 ring - 1) mod floor 0.25*(A016754 ring)-A016754 ring - 1 } 368078
 /371
 
-/bootstrap
-v:enlist[0 0]!enlist[1];
-x:1;y:0;
+g:(enlist 0 0)!enlist 1 / bootstrap
+l:1 0 / move east
 
-/iterate
-while[368078>n:sum 0^v[(x-1),y+1],v[1+x,y],v[-1+x,y],v[(x+1),y-1],p:v[x,y+1],v[x,y-1],v[(x-1),y],v[(x+1),y];
-  v[x,y]:n;
-  $[any (p:not not 0^p)~/:(1010b;1000b);
-    x+:1;                      / right
-    any p~/:(0010b;0110b);
-      y+:1;                    / up
-      any p~/:(0100b;0101b);
-        x-:1;                  / left
-        any p~/:(0001b;1001b);
-          y-:1;                / down
-          '"unknown"];
-  ]
-
-n
+while[368078>g[l]:sum (n:g l +/:(0 1;1 0;0 -1;-1 0)),g l+/:(1 1;1 -1;-1 -1;-1 1);
+  $[(d:"b"$0^n) in (0001b;0011b);
+    l+:0 1;  / move north
+    d in (0010b;0110b);
+    l+:-1 0; / move west
+    d in (0100b;1100b);
+    l+:0 -1; / move south
+    l+:1 0   / move east
+    ]
+  ];
+g l
 /369601
