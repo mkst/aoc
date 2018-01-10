@@ -1,40 +1,42 @@
 / --- Day 7: Recursive Circus ---
 
-t:`n xkey flip `n`w`t`p!"sjjs"$\:(); / node, weight, total, parent
+t:`n xkey flip `n`w`p!"sjs"$\:(); / node, weight, total, parent
 
 {
   x:" " vs x except ",()";
-  nd:`$x 0;   / node
-  wt:"J"$x 1; / weight
-  `t upsert (nd;wt;0;t[nd;`p]);
-  if[2<count x;
-    { `t upsert (y;t[y;`w];0;x) }[nd;] each `$3_x;
-  ]
+  n:`$x 0;   / node
+  w:"J"$x 1; / weight
+  `t upsert (n;w;t[n;`p]); / add node
+  `t upsert {[p;n] (n;t[n;`w];p) }[n;] each `$3_x / update parent
   } each read0 `:input/07.txt;
 
 / find node without a parent
 exec first n from t where null p
 /`hlqnsbe
 
+/ add column for total weight
+update t:0 from `t;
+
+/ calculate total weights
 {
-  wt:t[x;`w];
-  if[count s:select from t where p=x;
-    wt+:sum .z.s each exec n from s;
-    update t:wt from `t where n=x
-    ];
-  :wt
+  $[count c:exec n from t where p=x;
+    t[x;`t]:t[x;`w]+sum .z.s each c;
+    t[x;`w]
+    ]
   }`;
 
+/delete null node added by recursion
+s:delete from t where null n
 / delete leaves
-s:delete from t where t=0;
-/ add eq column, true if all weights are equal
-s:select n, t, eq:{ all 0=1_deltas x }t by p from s;
-/ remove entries with equal weights
-s:select from s where not eq;
-/ remove entries that contain a parent
-s:select from s where not any each n in\:raze exec p from s;
-/ find the node with the difference and what the difference is
-s:first exec { (first x where d=m;m:max 1 _ d:deltas y) }'[n;t] from s;
-/ calculate the correct weight
-neg[last s]+first exec w from t where n=first s
+s:delete from s where t = 0
+/ add ws column, number of distinct weights
+s:select n, w, t, ws:count distinct t by p from s
+/ remove entries with correct weights
+s:delete from s where ws = 1
+/ remove parents of the bad node
+s:select from s where not any each n in\:exec p from s
+/ locate (badnode;weight_difference)
+res:exec {(first x where y=z;(first y where y<>z)-z)}[n;t;first where 1=count each group t] from ungroup s
+/ calculate correct weight
+(last res)+exec first w from t where n=first res
 /1993
