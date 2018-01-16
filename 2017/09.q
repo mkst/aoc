@@ -25,16 +25,11 @@ cg:{
   :0;
   };
 
-solve:{
-  g::0b;            / reset garbage flag
-  d::1;             / reset depth
-  gc::0;            / reset garbage count
-  x:ssr[x;"!?";""]; / remove escaped characters
-  x:raze rg each x; / remove garbage
-  sum cg each x     / count groups
-  };
+g:0b / garbage?
+d:1  / depth
+gc:0 / garbage count
 
-solve first read0 `:input/09.txt
+sum cg each raze rg each ssr[;"!?";""] first read0 `:input/09.txt
 /12505
 gc
 /6671
