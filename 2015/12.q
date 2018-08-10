@@ -1,34 +1,29 @@
 /--- Day 12: JSAbacusFramework.io ---
 
-flatten:{[x]
-  $[0h=t:type[x];
-    @[x;where any 0 98 99=\:type each x;.z.s];
-    99=t;
-      .z.s @[value x;where "red"~/:value x;{ssr[x;"red";"ignore"]}];
-      98=t;
-        .z.s flip x;
-        x]
-  }
-
-strip:{[x]
-  if[0h=t:type x;
-    if[any s:10h=type each x;
-      if["ignore" in x where s;
-        :0f;
-        ];
-      ];
+f:{
+  // check type of what we have
+  t:type x;
+  if[t=0h; // mixed list
+    :raze .z.s[;y] each x
     ];
-  $[0h=t;
-    .z.s each x;
-    x]
-  };
+  if[t=98h; // table
+    :raze .z.s[;y] each flip x
+    ];
+  if[t=99h; // dictionary
+    :$[y and any "red"~/:v:value x;
+      0;
+      raze .z.s[;y] each v
+      ]
+    ];
+  if[t in -9 9h; // float
+    :x
+    ];
+  // else
+  0f
+ }
 
-sumup:{[x]
-  sum x where -9=type each x:raze over x
-  }
+sum f[;0b] j:.j.k first read0 `:input/12.txt
+/191164f
 
-sumup f:flatten j:.j.k first read0 `:input/12.txt
-/191164
-
-sumup strip f
-/answer is not 88340
+sum f[;1b] j
+/87842f

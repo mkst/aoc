@@ -70,7 +70,7 @@
  - `**` Day 9: All in a Single Night ([.q](2015/09.q) | [.py](2015/09.py))
  - `**` Day 10: Elves Look, Elves Say ([.q](2015/10.q) | [.py](2015/10.py))
  - `**` Day 11: Corporate Policy ([.q](2015/11.q) | [.py](2015/11.py))
- - `*_` Day 12: JSAbacusFramework.io ([.q](2015/12.q) | [.py](2015/12.py))
+ - `**` Day 12: JSAbacusFramework.io ([.q](2015/12.q) | [.py](2015/12.py))
  - `**` Day 13: Knights of the Dinner Table ([.q](2015/13.q) | [.py](2015/13.py))
  - `**` Day 14: Reindeer Olympics ([.q](2015/14.q) | [.py](2015/14.py))
  - `**` Day 15: Science for Hungry People ([.q](2015/15.q))
@@ -78,7 +78,7 @@
  - `**` Day 17: No Such Thing as Too Much ([.py](2015/17.py))
  - `__` Day 18: Like a GIF For Your Yard
  - `*_` Day 19: Medicine for Rudolph ([.q](2015/19.q))
- - `__` Day 20: Infinite Elves and Infinite Houses
+ - `*_` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
  - `__` Day 21: RPG Simulator 20XX
  - `__` Day 22: Wizard Simulator 20XX
  - `**` Day 23: Opening the Turing Lock ([.py](2015/23.py))
