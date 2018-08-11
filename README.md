@@ -76,7 +76,7 @@
  - `**` Day 15: Science for Hungry People ([.q](2015/15.q))
  - `**` Day 16: Aunt Sue ([.q](2015/16.q))
  - `**` Day 17: No Such Thing as Too Much ([.py](2015/17.py))
- - `__` Day 18: Like a GIF For Your Yard
+ - `**` Day 18: Like a GIF For Your Yard ([.q](2015/18.q))
  - `*_` Day 19: Medicine for Rudolph ([.q](2015/19.q))
  - `*_` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
  - `__` Day 21: RPG Simulator 20XX
