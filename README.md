@@ -79,7 +79,7 @@
  - `**` Day 18: Like a GIF For Your Yard ([.q](2015/18.q))
  - `*_` Day 19: Medicine for Rudolph ([.q](2015/19.q))
  - `*_` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
- - `__` Day 21: RPG Simulator 20XX
+ - `**` Day 21: RPG Simulator 20XX
  - `__` Day 22: Wizard Simulator 20XX
  - `**` Day 23: Opening the Turing Lock ([.py](2015/23.py))
  - `__` Day 24: It Hangs in the Balance
