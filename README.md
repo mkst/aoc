@@ -82,5 +82,5 @@
  - `**` Day 21: RPG Simulator 20XX ([.q](2015/21.q))
  - `__` Day 22: Wizard Simulator 20XX
  - `**` Day 23: Opening the Turing Lock ([.py](2015/23.py))
- - `__` Day 24: It Hangs in the Balance
+ - `**` Day 24: It Hangs in the Balance ([.q](2015/24.q))
  - `*_` Day 25: Let It Snow ([.q](2015/25.q))
