@@ -47,7 +47,7 @@
  - `**` Day 14: One-Time Pad ([.py](2016/14.py))
  - `**` Day 15: Timing is Everything ([.py](2016/15.py))
  - `**` Day 16: Dragon Checksum ([.py](2016/16.py))
- - `__` Day 17: Two Steps Forward
+ - `**` Day 17: Two Steps Forward ([.q](2016/17.q))
  - `**` Day 18: Like a Rogue ([.py](2016/18.py))
  - `**` Day 19: An Elephant Named Joseph ([.py](2016/19.py))
  - `**` Day 20: Firewall Rules ([.py](2016/20.py))
@@ -78,8 +78,8 @@
  - `**` Day 17: No Such Thing as Too Much ([.py](2015/17.py))
  - `**` Day 18: Like a GIF For Your Yard ([.q](2015/18.q))
  - `*_` Day 19: Medicine for Rudolph ([.q](2015/19.q))
- - `*_` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
- - `**` Day 21: RPG Simulator 20XX
+ - `**` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
+ - `**` Day 21: RPG Simulator 20XX ([.q](2015/21.q))
  - `__` Day 22: Wizard Simulator 20XX
  - `**` Day 23: Opening the Turing Lock ([.py](2015/23.py))
  - `__` Day 24: It Hangs in the Balance
