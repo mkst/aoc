@@ -77,10 +77,10 @@
  - `**` Day 16: Aunt Sue ([.q](2015/16.q))
  - `**` Day 17: No Such Thing as Too Much ([.py](2015/17.py))
  - `**` Day 18: Like a GIF For Your Yard ([.q](2015/18.q))
- - `*_` Day 19: Medicine for Rudolph ([.q](2015/19.q))
+ - `**` Day 19: Medicine for Rudolph ([.q](2015/19.q))
  - `**` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
  - `**` Day 21: RPG Simulator 20XX ([.q](2015/21.q))
- - `**` Day 22: Wizard Simulator 20XX
+ - `**` Day 22: Wizard Simulator 20XX ([.q](2015/22.q))
  - `**` Day 23: Opening the Turing Lock ([.py](2015/23.py))
  - `**` Day 24: It Hangs in the Balance ([.q](2015/24.q))
- - `*_` Day 25: Let It Snow ([.q](2015/25.q))
+ - `**` Day 25: Let It Snow ([.q](2015/25.q))
