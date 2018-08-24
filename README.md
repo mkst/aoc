@@ -54,7 +54,7 @@
  - `**` Day 21: Scrambled Letters and Hash ([.py](2016/21.py))
  - `*_` Day 22: Grid Computing ([.py](2016/22.py))
  - `**` Day 23: Safe Cracking ([.py](2016/23.py))
- - `__` Day 24: Air Duct Spelunking
+ - `**` Day 24: Air Duct Spelunking ([.q](2016/24.q))
  - `*_` Day 25: Clock Signal ([.py](2016/25.py))
 
 **2015**
