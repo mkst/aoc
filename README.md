@@ -1,6 +1,34 @@
 # aoc
 [Advent Of Code](http://adventofcode.com/) solutions in a mixture of Python and Q/kdb+.
 
+**2018**
+
+  - `**` Day 1: Day 1: Chronal Calibration
+  - `__` Day 2:
+  - `__` Day 3:
+  - `__` Day 4:
+  - `__` Day 5:
+  - `__` Day 6:
+  - `__` Day 7:
+  - `__` Day 8:
+  - `__` Day 9:
+  - `__` Day 10:
+  - `__` Day 11:
+  - `__` Day 12:
+  - `__` Day 13:
+  - `__` Day 14:
+  - `__` Day 15:
+  - `__` Day 16:
+  - `__` Day 17:
+  - `__` Day 18:
+  - `__` Day 19:
+  - `__` Day 20:
+  - `__` Day 21:
+  - `__` Day 22:
+  - `__` Day 23:
+  - `__` Day 24:
+  - `__` Day 25:
+
 **2017**
 
   - `**` Day 1: Inverse Captcha ([.q](2017/01.q) | [.py](2017/01.py))
