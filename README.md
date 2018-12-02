@@ -4,7 +4,7 @@
 **2018**
 
   - `**` Day 1: Day 1: Chronal Calibration
-  - `__` Day 2:
+  - `**` Day 2: Inventory Management System
   - `__` Day 3:
   - `__` Day 4:
   - `__` Day 5:
