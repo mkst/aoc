@@ -5,7 +5,7 @@
 
   - `**` Day 1: Day 1: Chronal Calibration
   - `**` Day 2: Inventory Management System
-  - `__` Day 3:
+  - `**` Day 3: Day 3: No Matter How You Slice It
   - `__` Day 4:
   - `__` Day 5:
   - `__` Day 6:
