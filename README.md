@@ -3,10 +3,10 @@
 
 **2018**
 
-  - `**` Day 1: Chronal Calibration
-  - `**` Day 2: Inventory Management System
-  - `**` Day 3: No Matter How You Slice It
-  - `**` Day 4: Repose Record
+  - `**` Day 1: Chronal Calibration ([.q](2018/01.q))
+  - `**` Day 2: Inventory Management System ([.q](2018/02.q))
+  - `**` Day 3: No Matter How You Slice It ([.q](2018/03.q))
+  - `**` Day 4: Repose Record ([.q](2018/04.q))
   - `__` Day 5:
   - `__` Day 6:
   - `__` Day 7:
