@@ -7,7 +7,7 @@
   - `**` Day 2: Inventory Management System ([.q](2018/02.q) | [.py](2018/02.py))
   - `**` Day 3: No Matter How You Slice It ([.q](2018/03.q))
   - `**` Day 4: Repose Record ([.q](2018/04.q))
-  - `__` Day 5:
+  - `**` Day 5: Alchemical Reduction ([.q](2018/05.q))
   - `__` Day 6:
   - `__` Day 7:
   - `__` Day 8:
