@@ -9,7 +9,7 @@
   - `**` Day 4: Repose Record ([.q](2018/04.q))
   - `**` Day 5: Alchemical Reduction ([.q](2018/05.q))
   - `**` Day 6: Chronal Coordinates ([.q](2018/06.q))
-  - `*_` Day 7: The Sum of Its Parts ([.q](2018/07.q))
+  - `**` Day 7: The Sum of Its Parts ([.q](2018/07.q))
   - `__` Day 8:
   - `__` Day 9:
   - `__` Day 10:
