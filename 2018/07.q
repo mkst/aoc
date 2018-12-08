@@ -1,15 +1,13 @@
 // --- Day 7: The Sum of Its Parts ---
 
-t:select raze b by a from `a xasc flip `a`b!(" c     c";" ")0:`:input/07.txt
+t:select raze b by a from flip `a`b!(" c     c";" ")0:`:input/07.txt
 
-r:{ $[count ex:exec a from t where not a in x, not a in\:raze b;
-      x,first ex;
-      x,ex,first exec b from t where not a in (-1_x)] }/[""];
-/ counter
-i:0
-offset:60
-workers:5
-/ available workers
+r:{ x,first $[count ex:exec a from t where not a in x, not a in\:raze b;ex;exec b from t where not a in (-1_x)] }/[""];r
+/"BFGKNRTWXZIHUMPQLVOYJACDSE"
+
+/ offset & workers
+offset:60;workers:5
+/ create worker queues
 W:workers#enlist"";
 / queue of work
 q:(offset+1+.Q.A?r)#'r
@@ -21,7 +19,9 @@ nj:{[]
   / last item in the queue and nothing else in progress
   $[(0=count ip)&(1=count q)&null n;first (first q) except ip;n]
   };
-
+/ counter
+i:0
+/ process work
 while[count[dn]<count r;
   / update in-progress, done
   ip:ip except dn,:raze W where 1=count each W;
@@ -41,7 +41,5 @@ while[count[dn]<count r;
   i+:1
   ];
 
-r
-/"BFGKNRTWXZIHUMPQLVOYJACDSE"
 -1+i
 /1163
