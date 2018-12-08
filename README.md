@@ -10,7 +10,7 @@
   - `**` Day 5: Alchemical Reduction ([.q](2018/05.q))
   - `**` Day 6: Chronal Coordinates ([.q](2018/06.q))
   - `**` Day 7: The Sum of Its Parts ([.q](2018/07.q))
-  - `__` Day 8:
+  - `*_` Day 8: Memory Maneuver ([.q](2018/08.q))
   - `__` Day 9:
   - `__` Day 10:
   - `__` Day 11:
