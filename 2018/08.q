@@ -2,7 +2,8 @@
 
 e:"J"$" "vs first read0 `:input/08.txt
 
-md:();
+md:()
+nodes:()!()
 
 r:{[level;children;metadata;x]
   d:0;
@@ -16,11 +17,22 @@ r:{[level;children;metadata;x]
       ];
     ];
   / add metadata
-  md,:enlist metadata#d _ x;
+  md,:enlist M:metadata#d _ x;
+  if[level;
+    / add node value to nodes
+    nodes[level],:sum $[children;
+                        nodes[level+1] M-1;
+                        M];
+    / clean up level
+    nodes[level+1]:()
+    ];
   / return length to drop
   d+2+metadata
   };
 
 r[0;1;0;e];
+
 sum raze md
 /42798
+sum nodes 1
+/ 23798
