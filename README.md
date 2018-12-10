@@ -12,7 +12,7 @@
   - `**` Day 7: The Sum of Its Parts ([.q](2018/07.q))
   - `**` Day 8: Memory Maneuver ([.q](2018/08.q))
   - `**` Day 9: Marble Mania ([.q](2018/09.q))
-  - `__` Day 10:
+  - `**` Day 10: The Stars Align ([.q](2018/10.q))
   - `__` Day 11:
   - `__` Day 12:
   - `__` Day 13:
