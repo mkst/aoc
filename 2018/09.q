@@ -3,54 +3,47 @@
 r:"J"$@[;0 6]" "vs first read0 `:input/09.txt
 
 players:r 0
-lastmarble:r 1
+lastmarble:r 1 // 100*
 marbles:enlist 0
-currentmableindex:0
-remainingmarbles:1 + til lastmarble
+marble:1
+marble_idx:0
 
-scores:(til players)!players#0
-step:0
+scores:players#0
 
-while[count remainingmarbles;
-  / marble to play
-  m:first remainingmarbles;
-  / remove from remaining marbles
-  remainingmarbles: 1 _ remainingmarbles;
+now:.z.p;
+while[marble < lastmarble;
   / process marble
-  $[0 = m mod 23;
+  $[0=marble mod 23;
     [
-     / add (23) marble to score
-     scores[step mod players]+:m;
      / 7 marbles counter-clockwise
-     ci:currentmableindex - 7;
+     marble_idx-:7;
      / handle negative case
-     if[ci < 0;ci:(count marbles) + ci];
-     / locate marble
-     m2:marbles ci;
-     / add (new) marble to score
-     scores[step mod players]+:m2;
+     if[marble_idx < 0;
+       marble_idx+:count marbles
+       ];
+     / add (23) marble and (-7) marble to score
+     scores[marble mod players]+:marble+marbles marble_idx;
      / drop marble
-     marbles:marbles _ ci;
-     / set current marble
-     currentmableindex:ci
+     marbles:marbles _ marble_idx
     ];
     [
      / place marble
-     i:1 + (currentmableindex + 1) mod c:count marbles;
+     marble_idx:$[(marble_idx+1)=c:count marbles;
+         1;
+         2+marble_idx];
      /.log.Inf ("Placing at";i);
-     $[0=i;
-       marbles:m,marbles;
-       i=c;
-         marbles,:m;
-         marbles:(i#marbles),m,i _ marbles
-       ];
-      currentmableindex:i
+     $[marble_idx=c;
+       marbles:marbles,marble;
+         0=c;
+         marbles:marble,marbles;
+         marbles:(marble_idx#marbles),marble,marble_idx _ marbles
+       ]
     ]
   ];
-
-  step+:1
+  marble+:1
   ];
 
 max scores
 / 386018
-step
+.z.p - now
+/3085518618

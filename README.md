@@ -11,7 +11,7 @@
   - `**` Day 6: Chronal Coordinates ([.q](2018/06.q))
   - `**` Day 7: The Sum of Its Parts ([.q](2018/07.q))
   - `**` Day 8: Memory Maneuver ([.q](2018/08.q))
-  - `*_` Day 9: Marble Mania ([.q](2018/09.q))
+  - `**` Day 9: Marble Mania ([.q](2018/09.q))
   - `__` Day 10:
   - `__` Day 11:
   - `__` Day 12:
