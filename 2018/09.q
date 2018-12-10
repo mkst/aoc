@@ -3,14 +3,13 @@
 r:"J"$@[;0 6]" "vs first read0 `:input/09.txt
 
 players:r 0
-lastmarble:r 1 // 100*
+lastmarble:r 1 // 100*r 1
 marbles:enlist 0
 marble:1
 marble_idx:0
 
 scores:players#0
 
-now:.z.p;
 while[marble < lastmarble;
   / process marble
   $[0=marble mod 23;
@@ -45,5 +44,4 @@ while[marble < lastmarble;
 
 max scores
 / 386018
-.z.p - now
-/3085518618
+/ 3085518618
