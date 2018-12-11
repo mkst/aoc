@@ -23,7 +23,7 @@ rem:{[active]
   n0idx:prv n1idx;                      / 8 before active
 
   nodes[n2idx]:nodes[n1idx;0],nodes[n2idx;1 2];
-  nodes[n0idx]:nodes[n0idx;0 1],nodex[n1idx;2];
+  nodes[n0idx]:nodes[n0idx;0 1],nodes[n1idx;2];
   / return (current value;new active)
   (nodes[n1idx;1];n2idx)
   };
