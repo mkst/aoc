@@ -13,7 +13,7 @@
   - `**` Day 8: Memory Maneuver ([.q](2018/08.q))
   - `**` Day 9: Marble Mania ([.q](2018/09.q))
   - `**` Day 10: The Stars Align ([.q](2018/10.q))
-  - `__` Day 11:
+  - `*_` Day 11: Chronal Charge  ([.q](2018/11.q))
   - `__` Day 12:
   - `__` Day 13:
   - `__` Day 14:
