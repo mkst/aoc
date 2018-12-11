@@ -1,39 +1,13 @@
 // --- Day 11: Chronal Charge ---
 
-p:{
-  /Find the fuel cell's rack ID, which is its X coordinate plus 10.
-  rid:x + 11;
-  /Begin with a power level of the rack ID times the Y coordinate.
-  rid*:1+y;
-  /Increase the power level by the value of the grid serial number (your puzzle input).
-  rid+:sn;
-  /Set the power level to itself multiplied by the rack ID.
-  rid*:x + 11;
-  /Keep only the hundreds digit of the power level (so 12345 becomes 3; numbers with no hundreds digit become 0).
-  rid:{ mod[;10] x div 100 } rid;
-  /Subtract 5 from the power level.
-  rid-:5;
-  / Update grid
-  .[`grid;(x;y);:;rid]
-  };
-
-s:{
-  sum .[grid;] each x+/:(0 0;1 0;1 1;0 1;-1 1;-1 0;-1 -1;0 -1;1 -1)
-  };
-
 sn:"J"$first read0 `:input/11.txt
-
-grid:300 300#0
-
-coords:raze til[300],\:/:til 300
-
-p .'coords;
-g2:s each coords
-m:first where g2=max g2
-
-","sv string (m mod 300;m div 300)
-/ 7139
-
-\
-
-sw:{[x;y] y#'next\[(count x)-y;x] }
+g:300
+/ apply power to grid
+grid:(2#g)#{ mod[div[(x+11)*sn+(1+y)*x+11;100];10]-5 }.'raze til[g],\:/:til g;
+/ determine max and coords of max
+f:{ (max r;1+(mod[;1+g-x];div[;1+g-x])@\:r?max r:{ sum raze .[grid;x] } each (x cut) each raze a,/:\:a:til[1+g-x]+\:til x) }
+/ solve for sliding window of size 3
+-1@","sv string last f 3;
+/ "20,62"
+-1@{ (","sv string last x),",",string 2 + y }[;w] res w:res[;0]?max (res:f peach 2 + til 18)[;0];
+/ "229,61,16"
