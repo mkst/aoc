@@ -1,25 +1,18 @@
 // --- Day 14: Chocolate Charts ---
 
-maxsteps:"J"$first read0 `:input/14.txt
+i:"J"$first read0 `:input/14.txt
+r:3 7;e:0 1
 
-r:3 7
-e:0 1
-
-while[count[r] < 10+maxsteps;
-  e:mod[1 + e + r e;count r,:$[null first t:10 vs sum r e;0;t]]
- ];
-
-10 sv 10#maxsteps _ r
+while[count[r] < 10+i;
+  e:mod[1 + e + r e;count r,:"J"$string string sum r e]
+  ];
+10 sv 10#i _ r
 / 1191216109
 
-r:3 7
-e:0 1
-lastrecipe:()
+r:3 7;e:0 1
 
-while[not maxsteps in lastrecipe;
-  e:mod[e + 1 + r e;count r,:$[null first t:10 vs sum r e;0;t]];
-  lastrecipe:(10 sv 1_l;10 sv -1_l:-7#r)
+while[not i in "J"$raze each string -1 1_\:-7#r;
+  e:mod[1 + e + r e;count r,:"J"$string string sum r e];
  ];
-
-$[maxsteps~10 sv -1_-7#r;-7;-6] + count r
+$[i~10 sv -1_-7#r;-7;-6] + count r
 /20268576
