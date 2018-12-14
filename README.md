@@ -15,7 +15,7 @@
   - `**` Day 10: The Stars Align ([.q](2018/10.q))
   - `**` Day 11: Chronal Charge ([.q](2018/11.q))
   - `**` Day 12: Subterranean Sustainability ([.q](2018/12.q))
-  - `__` Day 13: Mine Cart Madness
+  - `**` Day 13: Mine Cart Madness ([.q](2018/13.q))
   - `**` Day 14: Chocolate Charts ([.q](2018/14.q))
   - `__` Day 15:
   - `__` Day 16:
