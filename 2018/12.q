@@ -11,3 +11,4 @@ while[generations > count states,:enlist state:(state (-2+til 5)+/:til count sta
 sum neg[padding]+where states 19
 / 3051
 sum (50000000000-count states)+neg[padding]+where state
+/ 1300000000669
