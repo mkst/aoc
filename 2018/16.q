@@ -41,9 +41,11 @@ while[count[lut]<count pos;
   lut[oc]:p;
   pos:pos except\:oc
  ];
+/ arrange opcodes by id
+opcodes:opcodes lut til count lut
 / reset registers to zero
 r:4#0
 / execute test program
-{ (opcodes lut[x 0]) . x[1 2 3] } each value each (2 + 4*count i) _ R;
+{ opcodes[x 0] . x[1 2 3] } each value each (2 + 4*count i) _ R;
 r 0
 / 584
