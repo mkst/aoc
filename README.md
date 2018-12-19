@@ -20,7 +20,7 @@
   - `*_` Day 15: Beverage Bandits ([.q](2018/15.q))
   - `**` Day 16: Chronal Classification ([.q](2018/16.q))
   - `__` Day 17:
-  - `__` Day 18:
+  - `**` Day 18: Settlers of The North Pole ([.q](2018/18.q))
   - `__` Day 19:
   - `__` Day 20:
   - `__` Day 21:
