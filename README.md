@@ -21,7 +21,7 @@
   - `**` Day 16: Chronal Classification ([.q](2018/16.q))
   - `__` Day 17:
   - `**` Day 18: Settlers of The North Pole ([.q](2018/18.q))
-  - `__` Day 19:
+  - `*_` Day 19: Go With The Flow ([.q](2018/19.q))
   - `__` Day 20:
   - `__` Day 21:
   - `__` Day 22:
