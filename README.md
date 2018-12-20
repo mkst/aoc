@@ -17,7 +17,7 @@
   - `**` Day 12: Subterranean Sustainability ([.q](2018/12.q))
   - `**` Day 13: Mine Cart Madness ([.q](2018/13.q))
   - `**` Day 14: Chocolate Charts ([.q](2018/14.q))
-  - `*_` Day 15: Beverage Bandits ([.q](2018/15.q))
+  - `**` Day 15: Beverage Bandits ([.q](2018/15.q))
   - `**` Day 16: Chronal Classification ([.q](2018/16.q))
   - `__` Day 17:
   - `**` Day 18: Settlers of The North Pole ([.q](2018/18.q))
