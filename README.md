@@ -24,7 +24,7 @@
   - `*_` Day 19: Go With The Flow ([.q](2018/19.q))
   - `__` Day 20:
   - `__` Day 21:
-  - `__` Day 22:
+  - `*_` Day 22: Day 22: Mode Maze ([.q](2018/19.q))
   - `__` Day 23:
   - `__` Day 24:
   - `__` Day 25:
