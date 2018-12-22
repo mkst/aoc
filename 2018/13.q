@@ -4,10 +4,8 @@
 carts:raze { y,'where any x=/:"^v<>" }'[r;til count r:read0 `:input/13.txt]
 / current direction of carts
 carts:carts,'enlist each t:.[r;] each carts
-/ set previous turn to right
+/ set next turn to left
 carts:carts,'"l"
-/ set previous square to - or |
-carts:carts,'"|-"t in\:"<>"
 / replace carts with straight track
 .[`r;;:;].'flip(carts[;0 1];"|-"t in\:"<>");
 

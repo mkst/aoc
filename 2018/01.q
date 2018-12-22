@@ -2,8 +2,8 @@
 
 sum r:"J"$read0 `:input/01.txt
 / 536
-first where d=min d:.[;(::;1)] group 0,sums 200000#r
+d?min d:.[;(::;1)] group 0,sums 200000#r
 / 75108
 
 \
-k)(+/r),*&d=&/d:.[;(::;1)]@=0,+\200000#r:"J"$0:`:input/01.txt
+k)(+/r),d?&/d:.[;(::;1)]@=0,+\200000#r:"J"$0:`:input/01.txt
