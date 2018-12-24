@@ -21,10 +21,10 @@
   - `**` Day 16: Chronal Classification ([.q](2018/16.q))
   - `__` Day 17:
   - `**` Day 18: Settlers of The North Pole ([.q](2018/18.q))
-  - `*_` Day 19: Go With The Flow ([.q](2018/19.q))
+  - `**` Day 19: Go With The Flow ([.q](2018/19.q))
   - `__` Day 20:
   - `__` Day 21:
-  - `*_` Day 22: Day 22: Mode Maze ([.q](2018/22.q))
+  - `*_` Day 22: Mode Maze ([.q](2018/22.q))
   - `*_` Day 23: Experimental Emergency Teleportation ([.q](2018/23.q))
   - `__` Day 24:
   - `__` Day 25:
