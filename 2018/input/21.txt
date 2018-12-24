@@ -1,0 +1,32 @@
+#ip 2
+seti 123 0 3       # 00 | r[3]:123            // set register 3 to 123                                              0 0 0 0 0 0   > 0 0 0 123 0 0
+bani 3 456 3       # 01 | r[3]:r[3] & 456     // and register 3 with 456 and store in 3 => 72                       0 0 1 123 0 0 > 0 0 1 72 0 0
+eqri 3 72 3        # 02 | r[3]:r[3]=72        // register 3 == 72 ?                                                 0 0 2 72 0 0  > 0 0 2 1 0 0
+addr 3 2 2         # 03 | r[2]+:r[3]        ! // add register 3 to register 2 (jump to inst +1 or +2)               0 0 3 1  0 0  > 0 0 4 1 0 0
+seti 0 0 2         # 04*| r[2]:0            ! // set register 2 to zero (loop back to 1)
+seti 0 5 3         # 05 | r[3]:0              // set register 3 to 0                                                0 0 5 1 0 0 > 0 0 5 0 0 0
+bori 3 65536 1     # 06 | r[1]:r[3]|65536     // register 3 or 65536 and store in register 1 => 65536               0 0 6 0 0 0 > 0 65536 6 0 0
+seti 10373714 2 3  # 07 | r[3]:10373714       // set register 3 to 10373714 ***                                     0 65536 7 0 0 0 > 0 65536 7 10373714 0 0
+bani 1 255 5       # 08 | r[5]:r[1]&255       // and register 1 with 255 and store in register 5 (limit to 7 bytes) 0 65536 8 10373714 0 0 > 0 65536 8 10373714 0 0
+addr 3 5 3         # 09 | r[3]+:r[5]          // add register 3 and register 5 and store in register 3              0 65536 9 10373714 0 0 > 0 65536 9 10373714 0 0
+bani 3 16777215 3  # 10 | r[3]:r[3]&16777215  // take first 24 bits of register 3                                   0 65536 10 10373714 0 0 > 0 65536 10 10373714 0 0
+muli 3 65899 3     # 11 | r[3]*:65899         // multiply by 65899                                                  0 65536 11 10373714 0 0 > 0 65536 11 683617378886 0 0
+bani 3 16777215 3  # 12 | r[3]:r[3]&16777215  // take first 24 bits of register 3                                   0 65536 12 683617378886 0 0 > 0 65536 12 12935750 0 0
+gtir 256 1 5       # 13 | r[5]:256>r[1]       // 256 > register 1 and store in register 5                           0 65536 13 12935750 0 0 > 0 65536 13 12935750 0 0
+addr 5 2 2         # 14 | r[2]+:r[5]        ! // add register 5 to register 2                                       0 65536 14 12935750 0 1 > 0 65536 14 12935750 0 0
+addi 2 1 2         # 15 | r[2]+:1           ! // increment register 2 by 1                                          0 65536 15 12935750 0 1 > 0 65536 16 12935750 0 0
+seti 27 7 2        # 16 | r[2]:27           O // jump to instruction 27+1 = 28
+seti 0 3 5         # 17*| r[5]:0              // set register 5 to zero                                             0 65536 17 12935750 0 0 > 0 65536 17 12935750 0 0
+addi 5 1 4         # 18 | r[4]:r[5]+1         // add 1 to register 5 and store in register 4
+muli 4 256 4       # 19 | r[4]*:256           // multiply register 4 by 256 and store back in register 4
+gtrr 4 1 4         # 20 | r[4]:r[4]>r[1]      // store register 4 greater-than register 1 in register 4
+addr 4 2 2         # 21 | r[2]+:r[4]        ! // add register 4 to register 2
+addi 2 1 2         # 22 | r[2]+:1           ! // increment register 2 by 1
+seti 25 4 2        # 23 | r[2]:25           ! // jump to instruction 25
+addi 5 1 5         # 24 | r[5]+:1             // increment register 5 by 1
+seti 17 0 2        # 25 | r[2]:17           ! // set register 2 to 17
+setr 5 2 1         # 26 | r[1]:r[5]           // set register 1 to value of register 5
+seti 7 4 2         # 27 | r[2]:7            ! // set register 2 to 7
+eqrr 3 0 5         # 28 | r[5]:r[3]=r[0]      // compare register 3 equal to register 0, store result in register 5
+addr 5 2 2         # 29 | r[2]+:r[5]        X // add register 2 to register 5 and store back in register 2
+seti 5 7 2         # 30 | r[2]:7            ! // set register 2 to 7
