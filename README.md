@@ -19,15 +19,15 @@
   - `**` Day 14: Chocolate Charts ([.q](2018/14.q))
   - `**` Day 15: Beverage Bandits ([.q](2018/15.q))
   - `**` Day 16: Chronal Classification ([.q](2018/16.q))
-  - `__` Day 17:
+  - `__` Day 17: Reservoir Research
   - `**` Day 18: Settlers of The North Pole ([.q](2018/18.q))
   - `**` Day 19: Go With The Flow ([.q](2018/19.q))
-  - `__` Day 20:
-  - `*_` Day 21: Chronal Conversion ([.q](2018/21.q))
+  - `__` Day 20: A Regular Map
+  - `**` Day 21: Chronal Conversion ([.q](2018/21.q))
   - `*_` Day 22: Mode Maze ([.q](2018/22.q))
   - `*_` Day 23: Experimental Emergency Teleportation ([.q](2018/23.q))
-  - `__` Day 24:
-  - `__` Day 25:
+  - `__` Day 24: Immune System Simulator 20XX
+  - `__` Day 25: Four-Dimensional Adventure
 
 **2017**
 
