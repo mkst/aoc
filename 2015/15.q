@@ -1,12 +1,12 @@
 /--- Day 15: Science for Hungry People ---
 
-/crunch all combinations that add up to 100 (using base 98)
-combos:4 cut raze{ $[100=sum x:98 98 98 98 vs x;x;()] } peach til -912380+98*98*98*98;
+/ all y-digit combinations that add up to x
+combos:{ { $[z=count x;enlist x,y;raze .z.s[;;z]'[x,/:t;y - t:til 1+y]] }[();x;y-1] }
 
-ingredients:`ing xkey flip `ing`cap`dur`fla`tex`cal!("s i i i i i";" ")0: except[;":,"] each read0 `:input/15.txt;
-recipes:flip (0!ingredients)[`ing]!flip combos;
+ingredients:`ing xkey flip `ing`cap`dur`fla`tex`cal!("s i i i i i";" ")0: except[;":,"] each read0 `:input/15.txt
+recipes:flip (0!ingredients)[`ing]!flip combos[100;4]
 
-max { (a~abs a)*prd 4#a:sum { ingredients[x]*y }'[key x;value x]} each recipes
+max { (a~abs a)*prd 4#a:sum { ingredients[x]*y }'[key x;value x] } each recipes
 /222870
-max { (a[`cal]=500)*(a~abs a)*prd 4#a:sum { ingredients[x]*y }'[key x;value x]} each recipes
+max { (a[`cal]=500)*(a~abs a)*prd 4#a:sum { ingredients[x]*y }'[key x;value x] } each recipes
 /117936
