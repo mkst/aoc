@@ -64,7 +64,7 @@
  - `**` Day 3: Squares With Three Sides ([.q](2016/03.q) | [.py](2016/03.py))
  - `**` Day 4: Security Through Obscurity ([.q](2016/04.q) | [.py](2016/04.py))
  - `**` Day 5: How About a Nice Game of Chess? ([.q](2016/05.q) | [.py](2016/05.py))
- - `**` Day 6: Signals and Noise ([.py](2016/06.py))
+ - `**` Day 6: Signals and Noise ([.q](2016/06.q) | [.py](2016/06.py))
  - `**` Day 7: Internet Protocol Version 7 ([.py](2016/07.py))
  - `**` Day 8: Two-Factor Authentication ([.py](2016/08.py))
  - `**` Day 9: Explosives in Cyberspace ([.py](2016/09.py))
