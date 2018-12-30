@@ -103,7 +103,7 @@
  - `**` Day 14: Reindeer Olympics ([.q](2015/14.q) | [.py](2015/14.py))
  - `**` Day 15: Science for Hungry People ([.q](2015/15.q))
  - `**` Day 16: Aunt Sue ([.q](2015/16.q))
- - `**` Day 17: No Such Thing as Too Much ([.py](2015/17.py))
+ - `**` Day 17: No Such Thing as Too Much ([.q](2015/17.q) | [.py](2015/17.py))
  - `**` Day 18: Like a GIF For Your Yard ([.q](2015/18.q))
  - `**` Day 19: Medicine for Rudolph ([.q](2015/19.q))
  - `**` Day 20: Infinite Elves and Infinite Houses ([.q](2015/20.q))
