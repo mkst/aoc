@@ -66,7 +66,7 @@
  - `**` Day 5: How About a Nice Game of Chess? ([.q](2016/05.q) | [.py](2016/05.py))
  - `**` Day 6: Signals and Noise ([.q](2016/06.q) | [.py](2016/06.py))
  - `**` Day 7: Internet Protocol Version 7 ([.q](2016/07.q) | [.py](2016/07.py))
- - `**` Day 8: Two-Factor Authentication ([.py](2016/08.py))
+ - `**` Day 8: Two-Factor Authentication ([.q](2016/08.q) | [.py](2016/08.py))
  - `**` Day 9: Explosives in Cyberspace ([.py](2016/09.py))
  - `**` Day 10: Balance Bots ([.py](2016/10.py))
  - `__` Day 11: Radioisotope Thermoelectric Generators
