@@ -68,7 +68,7 @@
  - `**` Day 7: Internet Protocol Version 7 ([.q](2016/07.q) | [.py](2016/07.py))
  - `**` Day 8: Two-Factor Authentication ([.q](2016/08.q) | [.py](2016/08.py))
  - `**` Day 9: Explosives in Cyberspace ([.py](2016/09.py))
- - `**` Day 10: Balance Bots ([.py](2016/10.py))
+ - `**` Day 10: Balance Bots ([.q](2016/10.q) | [.py](2016/10.py))
  - `__` Day 11: Radioisotope Thermoelectric Generators
  - `**` Day 12: Leonardo's Monorail ([.py](2016/12.py))
  - `**` Day 13: A Maze of Twisty Little Cubicles ([.py](2016/13.py))
