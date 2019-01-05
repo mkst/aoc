@@ -71,7 +71,7 @@
  - `**` Day 10: Balance Bots ([.q](2016/10.q) | [.py](2016/10.py))
  - `__` Day 11: Radioisotope Thermoelectric Generators
  - `**` Day 12: Leonardo's Monorail ([.q](2016/12.q) | [.py](2016/12.py))
- - `**` Day 13: A Maze of Twisty Little Cubicles ([.py](2016/13.py))
+ - `**` Day 13: A Maze of Twisty Little Cubicles ([.q](2016/13.q) | [.py](2016/13.py))
  - `**` Day 14: One-Time Pad ([.py](2016/14.py))
  - `**` Day 15: Timing is Everything ([.py](2016/15.py))
  - `**` Day 16: Dragon Checksum ([.py](2016/16.py))
