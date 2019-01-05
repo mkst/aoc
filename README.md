@@ -72,7 +72,7 @@
  - `__` Day 11: Radioisotope Thermoelectric Generators
  - `**` Day 12: Leonardo's Monorail ([.q](2016/12.q) | [.py](2016/12.py))
  - `**` Day 13: A Maze of Twisty Little Cubicles ([.q](2016/13.q) | [.py](2016/13.py))
- - `**` Day 14: One-Time Pad ([.py](2016/14.py))
+ - `**` Day 14: One-Time Pad ([.q](2016/14.q) | [.py](2016/14.py))
  - `**` Day 15: Timing is Everything ([.py](2016/15.py))
  - `**` Day 16: Dragon Checksum ([.py](2016/16.py))
  - `**` Day 17: Two Steps Forward ([.q](2016/17.q))
