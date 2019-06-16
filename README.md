@@ -27,7 +27,7 @@
   - `*_` Day 22: Mode Maze ([.q](2018/22.q))
   - `*_` Day 23: Experimental Emergency Teleportation ([.q](2018/23.q))
   - `__` Day 24: Immune System Simulator 20XX
-  - `__` Day 25: Four-Dimensional Adventure
+  - `*_` Day 25: Four-Dimensional Adventure ([.q](2018/25.q))
 
 **2017**
 
@@ -76,7 +76,7 @@
  - `**` Day 15: Timing is Everything ([.q](2016/15.q) | [.py](2016/15.py))
  - `**` Day 16: Dragon Checksum ([.q](2016/16.q) | [.py](2016/16.py))
  - `**` Day 17: Two Steps Forward ([.q](2016/17.q))
- - `**` Day 18: Like a Rogue ([.py](2016/18.py))
+ - `**` Day 18: Like a Rogue ([.q](2016/18.q) | [.py](2016/18.py))
  - `**` Day 19: An Elephant Named Joseph ([.py](2016/19.py))
  - `**` Day 20: Firewall Rules ([.py](2016/20.py))
  - `**` Day 21: Scrambled Letters and Hash ([.py](2016/21.py))
