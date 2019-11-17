@@ -69,7 +69,7 @@
  - `**` Day 8: Two-Factor Authentication ([.q](2016/08.q) | [.py](2016/08.py))
  - `**` Day 9: Explosives in Cyberspace ([.py](2016/09.py))
  - `**` Day 10: Balance Bots ([.q](2016/10.q) | [.py](2016/10.py))
- - `__` Day 11: Radioisotope Thermoelectric Generators
+ - `**` Day 11: Radioisotope Thermoelectric Generators ([.q](2016/11.q))
  - `**` Day 12: Leonardo's Monorail ([.q](2016/12.q) | [.py](2016/12.py))
  - `**` Day 13: A Maze of Twisty Little Cubicles ([.q](2016/13.q) | [.py](2016/13.py))
  - `**` Day 14: One-Time Pad ([.q](2016/14.q) | [.py](2016/14.py))
