@@ -1,17 +1,17 @@
 /--- Day 11: Radioisotope Thermoelectric Generators ---
 
-move:{[STATE;FROM;TO;ITEM]
-  / sort keeps states sane
+elevator:{[STATE;FROM;TO;ITEM]
+  / sort keeps visited sane
   STATE[FROM]:asc STATE[FROM] except ITEM;
   STATE[TO]:asc STATE[TO],ITEM;
   / return and include new level
   (STATE;TO)
  };
 
-combos:{ distinct asc each {raze y,/:'x except/:y}[x;]/[1;] x}
-validate:{ all { $[count A:x inter .Q.A; all (x inter .Q.a) in lower A;1b] } each x }
+combos:{ distinct asc each {raze y,/:'x except/:y}[x;]/[1;] x};
+validate:{ all { $[count A:x inter .Q.A; all (x inter .Q.a) in lower A;1b] } each x };
 
-opt:{[STATE;LEVEL;STEPS]
+opt:{[VISITED;STATE;LEVEL;STEPS]
   / potential moves
   opts:();
   / items on current floor
@@ -19,79 +19,61 @@ opt:{[STATE;LEVEL;STEPS]
   / not at the top floor, so go up
   if[LEVEL<3;
     / singles:
-    opts,:move[STATE;LEVEL;LEVEL+1;] each s;
+    opts,:elevator[STATE;LEVEL;LEVEL+1;] each s;
     / doubles:
     if[1<count s;
-      opts,:move[STATE;LEVEL;LEVEL+1;] each combos s
+      opts,:elevator[STATE;LEVEL;LEVEL+1;] each combos s
     ];
   ];
   / not at the bottom floor, so go down
   if[LEVEL>0;
     / singles:
-    opts,:move[STATE;LEVEL;LEVEL-1;] each s;
+    opts,:elevator[STATE;LEVEL;LEVEL-1;] each s;
     / doubles:
     if[1<count s;
-      opts,:move[STATE;LEVEL;LEVEL-1;] each combos s
+      opts,:elevator[STATE;LEVEL;LEVEL-1;] each combos s
     ];
   ];
   / clear invalid
   opts:opts where validate each opts[;0];
   / clear already visited
-  opts:opts except states;
+  opts:opts except VISITED;
   / return
   opts,'STEPS+1
   };
 
-/
-The first floor contains a thulium generator, a thulium-compatible microchip, a plutonium generator, and a strontium generator.
-The second floor contains a plutonium-compatible microchip and a strontium-compatible microchip.
-The third floor contains a promethium generator, a promethium-compatible microchip, a ruthenium generator, and a ruthenium-compatible microchip.
-The fourth floor contains nothing relevant.
-===
-An elerium generator.
-An elerium-compatible microchip.
-A dilithium generator.
-A dilithium-compatible microchip.
-\
+f:{[STATE]
+  / number of items to move to top floor
+  target:count raze STATE;
+  / work to be done, start on ground floor (0) having taken no steps
+  queue:enlist (STATE;0;0);
+  / work done
+  visited:enlist (STATE;0);
+  / whilst there is work to be done...
+  while[count queue;
+    / re-order by target state (more items towards the higher floors)
+    queue:queue idesc { reverse count each x } each queue[;0];
+    / pop first
+    item:first queue;
+    queue:1 _ queue;
+    / determine new options
+    o:opt[visited;] . item;
+    / are we done?
+    $[any r:target = {count last first x} each o;
+      / we are done!
+      :last last o where r;
+      [
+        / add any (new) options to queue
+        queue,:o except queue;
+        / treat as done
+        visited,:2#item;
+      ]
+      ]
+    ]
+  };
 
 / generator is uppercase, microchip is lowercase
-state:asc each ("dDeETtPS";"ps";"OoRr";"")
-target:count raze state;
-
-level:steps:0
-
-states:`u#()
-states,:enlist (state;level)
-
-queue:()
-queue,:enlist (state;level;steps)
-
-while[count queue;
-  / clear dupes
-  queue:distinct queue;
-  / re-order by target state (more items towards the top floor)
-  queue:queue idesc { count last x } each queue[;0];
-  / pop first
-  item:first queue;
-  queue::1 _ queue;
-  / determine next possible steps
-  o:opt . item;
-
-  $[any r:target = {count last first x} each o;
-    [
-      // we are done
-      res::last o where r;
-      queue::()
-    ];
-    [
-    / add options to queue
-    queue,:o;
-    / treat as done
-    states,:2#item;
-    ]
-    ];
-  ];
-
-last res
+f asc each ("TtPS";"ps";"OoRr";"")
 / 31
+f asc each ("dDeETtPS";"ps";"OoRr";"")
 / 55
