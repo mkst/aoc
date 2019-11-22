@@ -100,16 +100,19 @@ go:{[idx]
   :()
   }
 
-ELFSTRENGTH:3
+ELFSTRENGTH:3 / 16 for part 2
 
 step:0
 while[1b;
+  / print map
+  /-1@"\nRound: ",string[step],"\n";
+  /-1@m,'-17$flip count[m]$flip" "sv'4$string units;
   / clear dead units
   d:();
   / go
-  res:raze go each i:iasc units;
+  res:raze go each tcu:til count units;
   / remove dead units
-  units:units (til count units) except res;
+  units:units tcu except res;
   / re-sort based on location
   units:units iasc units[;0 1];
   / increment steps

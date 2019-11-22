@@ -1,31 +1,26 @@
 /--- Day 6: Probably a Fire Hazard ---
 
-grid:1000 1000#0b
-
 sanitize:{ "J"$flip ","vs'(" "vs x)$["u"=x 1;2 4;1 3] };
 range:{ first[x]+til 1+last[x]-first x };
 
-on:{  grid[range x;range y]:1b };
-off:{ grid[range x;range y]:0b };
-tog:{ grid[range x;range y]:not grid[range x;range y] };
+on:{  x[range y;range z]:1b;x };
+off:{ x[range y;range z]:0b;x };
+tog:{ x[range y;range z]:not x[range y;range z];x };
 
-light:{[i] $["n"=a:i 6;
-    on . sanitize i;
+light:{[g;i]
+  $["n"=a:i 6;
+    on[g;];
     "f"=a;
-    off . sanitize i;
-    tog . sanitize i]
+    off[g;];
+    tog[g;]] . sanitize i
   };
 
-light each r:read0 `:input/06.txt;
-sum sum grid
+sum sum light/[1000 1000#0b;r:read0 `:input/06.txt]
 /377891
 
-grid:1000 1000#0
+on:{  x[range y;range z]+:1;x };
+off:{ x[range y;range z]:0|x[range y;range z]-1;x };
+tog:{ x[range y;range z]+:2;x };
 
-on:{  grid[range x;range y]+:1 };
-off:{ grid[range x;range y]:0|grid[range x;range y]-1};
-tog:{ grid[range x;range y]+:2 };
-
-light each r;
-sum sum grid
+sum sum light/[1000 1000#0;r]
 /14110788

@@ -7,7 +7,7 @@ t:{ `g`m`s!(enlist"J"$1_@[;3]" "vs x 0),$[1=count x;(0;0);(::;sum)@'raze each fl
 / group by guard
 t:exec { `mx`m`s!(max[c];first where c=max c:count each group raze x;sum y) }[m;s] by g:g from t
 
-first exec g*m from t where s=exec max s from t
+first exec g*m from t where s = max s
 / 21083
-first exec g*m from t where mx=exec max mx from t
+first exec g*m from t where mx = max mx
 / 53024
