@@ -80,10 +80,10 @@
  - `**` Day 19: An Elephant Named Joseph ([py](2016/19.py))
  - `**` Day 20: Firewall Rules ([py](2016/20.py))
  - `**` Day 21: Scrambled Letters and Hash ([py](2016/21.py))
- - `*_` Day 22: Grid Computing ([py](2016/22.py))
+ - `**` Day 22: Grid Computing ([q](2016/22.q), [py](2016/22.py))
  - `**` Day 23: Safe Cracking ([py](2016/23.py))
  - `**` Day 24: Air Duct Spelunking ([q](2016/24.q))
- - `*_` Day 25: Clock Signal ([py](2016/25.py))
+ - `**` Day 25: Clock Signal ([py](2016/25.py))
 
 **2015**
 
@@ -109,6 +109,6 @@
  - `**` Day 20: Infinite Elves and Infinite Houses ([q](2015/20.q))
  - `**` Day 21: RPG Simulator 20XX ([q](2015/21.q))
  - `**` Day 22: Wizard Simulator 20XX ([q](2015/22.q))
- - `**` Day 23: Opening the Turing Lock ([q](2015/21.q), [py](2015/23.py))
+ - `**` Day 23: Opening the Turing Lock ([q](2015/23.q), [py](2015/23.py))
  - `**` Day 24: It Hangs in the Balance ([q](2015/24.q))
  - `**` Day 25: Let It Snow ([q](2015/25.q))
