@@ -79,7 +79,7 @@
  - `**` Day 18: Like a Rogue ([q](2016/18.q), [py](2016/18.py))
  - `**` Day 19: An Elephant Named Joseph ([py](2016/19.py))
  - `**` Day 20: Firewall Rules ([py](2016/20.py))
- - `**` Day 21: Scrambled Letters and Hash ([py](2016/21.py))
+ - `**` Day 21: Scrambled Letters and Hash ([q](2016/21.q), [py](2016/21.py))
  - `**` Day 22: Grid Computing ([q](2016/22.q), [py](2016/22.py))
  - `**` Day 23: Safe Cracking ([py](2016/23.py))
  - `**` Day 24: Air Duct Spelunking ([q](2016/24.q))
