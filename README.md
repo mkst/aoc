@@ -1,6 +1,10 @@
 # aoc
 [Advent Of Code](http://adventofcode.com/) solutions in a mixture of Python and Q/kdb+.
 
+**2019**
+
+  - `**` Day 1: The Tyranny of the Rocket Equation ([q](2019/01.q))
+  
 **2018**
 
   - `**` Day 1: Chronal Calibration ([q](2018/01.q), [py](2018/01.py))
