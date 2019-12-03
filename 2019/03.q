@@ -20,5 +20,5 @@ f:{
 
 min sum each abs c:(inter). w:raze each f each i:","vs'read0 `:input/03.txt
 /489
-2+min raze { sum raze where each y~/:/:x }[w;] each c
+min { sum 1+x?\:y }[w;] each c
 /93654
