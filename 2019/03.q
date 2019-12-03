@@ -1,30 +1,24 @@
 //--- Day 3: Crossed Wires ---
 
-f:{[w]
- d:first w;
- t:"J"$1_w;
- s:$[d="U";
-     (p[0] + 1 + til t),\:p 1;
-     d="D";
-     (p[0] - 1 + til t),\:p 1;
-     d="R";
-     p[0],/:(p[1] + 1 + til t);
-     p[0],/:(p[1] - 1 + til t)
-     ];
-  p::last s;
-  s
+f:{
+  r:{
+    p:first x;
+    d:first y;
+    t:1 + til"J"$1_y;
+    s:$[d="U";
+        (p[0]+t),'p 1;
+        d="D";
+        (p[0]-t),'p 1;
+        d="R";
+        p[0],'(p[1]+t);
+        p[0],'(p[1]-t)
+        ];
+    (last s;s)
+    }\[enlist 0 0;x];
+  :last each r
   };
 
-i:","vs'read0 `:input/03.txt
-
-p:0 0
-w1:raze f each i 0
-
-p:0 0
-w2:raze f each i 1
-
-min sum each abs c:w1 inter w2
+min sum each abs c:(inter). w:raze each f each i:","vs'read0 `:input/03.txt
 /489
-
-2+min raze { sum (where z~/:x;where z~/:y) }[w1;w2;] each c
+2+min raze { sum raze where each y~/:/:x }[w;] each c
 /93654
