@@ -5,6 +5,7 @@
 
   - `**` Day 1: The Tyranny of the Rocket Equation ([js](2019/01.js), [q](2019/01.q))
   - `**` Day 2: 1202 Program Alarm ([q](2019/02.q))
+  - `**` Day 3: Crossed Wires ([q](2019/03.q))
 
 **2018**
 
