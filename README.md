@@ -7,7 +7,8 @@
   - `**` Day 2: 1202 Program Alarm ([q](2019/02.q))
   - `**` Day 3: Crossed Wires ([q](2019/03.q))
   - `**` Day 4: Secure Container ([q](2019/04.q))
-  - `**` Day 5: Sunny with a Chance of Asteroids ([q](2019/04.q))
+  - `**` Day 5: Sunny with a Chance of Asteroids ([q](2019/05.q))
+  - `**` Day 6: Universal Orbit Map ([q](2019/06.q))
 
 **2018**
 
