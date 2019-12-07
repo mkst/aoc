@@ -1,6 +1,7 @@
 //--- Day 5: Sunny with a Chance of Asteroids ---
 
-f:{[i;mode]
+f:{[i;stdin]
+
   O:(
     // 0 noop
     { -1"noop" };
@@ -9,9 +10,9 @@ f:{[i;mode]
     // 2 multiplies, z:x*y
     { (0N;z;x*y) };
     // 3 stores input in x
-    { (0N;x;y) }[;mode];
+    { r:first STDIN;STDIN::1_STDIN;(0N;x;r) };
     // 4 outputs x
-    { if[x>0;-1 string x];0N };
+    { if[x>0;STDOUT::x];0N };
     // 5 jump if true
     { $[x;y;0N] };
     // 6 jump if false
@@ -24,6 +25,9 @@ f:{[i;mode]
 
   A:(0;3;3;1;1;2;2;3;3);
   p:0;
+
+  STDIN::(),stdin;
+  STDOUT::-1;
 
   while[9>o:first ii:reverse (5#10) vs i p;
     a:i p + 1 + til A o;
@@ -40,9 +44,12 @@ f:{[i;mode]
       p + 1 + A o;
       first r]
     ];
+  :STDOUT;
   };
 
-f[I:"J"$"," vs first read0 `:input/05.txt;1];
-/12428642
-f[I;5];
-/918655
+if[`05.q~.z.f;
+  -1@string f[I:"J"$"," vs first read0 `:input/05.txt;1];
+  /12428642
+  -1@string f[I;5]
+  /918655
+  ];
