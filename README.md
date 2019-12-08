@@ -9,7 +9,8 @@
   - `**` Day 4: Secure Container ([q](2019/04.q))
   - `**` Day 5: Sunny with a Chance of Asteroids ([q](2019/05.q))
   - `**` Day 6: Universal Orbit Map ([q](2019/06.q))
-  - `*_` Day 7: Amplification Circuit ([q](2019/07.q))
+  - `**` Day 7: Amplification Circuit ([q](2019/07.q))
+  - `**` Day 8: Space Image Format ([q](2019/08.q))
 
 **2018**
 
