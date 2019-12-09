@@ -1,4 +1,4 @@
-/--- Day 7: Amplification Circuit ---
+//--- Day 7: Amplification Circuit ---
 
 \l 09.q
 

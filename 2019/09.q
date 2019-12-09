@@ -1,4 +1,4 @@
-/--- Day 9: Sensor Boost ---
+//--- Day 9: Sensor Boost ---
 
 O:(
   // 0 noop
