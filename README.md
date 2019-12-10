@@ -12,6 +12,7 @@
   - `**` Day 7: Amplification Circuit ([q](2019/07.q))
   - `**` Day 8: Space Image Format ([q](2019/08.q))
   - `**` Day 9: Sensor Boost ([q](2019/09.q))
+  - `**` Day 10: Monitoring Station ([q](2019/10.q))
 
 **2018**
 
