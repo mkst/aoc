@@ -13,6 +13,7 @@
   - `**` Day 8: Space Image Format ([q](2019/08.q))
   - `**` Day 9: Sensor Boost ([q](2019/09.q))
   - `**` Day 10: Monitoring Station ([q](2019/10.q))
+  - `**` Day 11: Space Police ([q](2019/11.q))
 
 **2018**
 
