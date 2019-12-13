@@ -15,7 +15,7 @@
   - `**` Day 10: Monitoring Station ([q](2019/10.q))
   - `**` Day 11: Space Police ([q](2019/11.q))
   - `**` Day 12: The N-Body Problem ([q](2019/12.q))
-  - `*_` Day 13: Care Package ([q](2019/13.q))
+  - `**` Day 13: Care Package ([q](2019/13.q))
 
 **2018**
 
