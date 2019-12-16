@@ -16,6 +16,9 @@
   - `**` Day 11: Space Police ([q](2019/11.q))
   - `**` Day 12: The N-Body Problem ([q](2019/12.q))
   - `**` Day 13: Care Package ([q](2019/13.q))
+  - `__` Day 14: Day 14: Space Stoichiometry
+  - `__` Day 15: Day 15: Oxygen System
+  - `*_` Day 16: Day 16: Flawed Frequency Transmission ([q](2019/16.q))
 
 **2018**
 
