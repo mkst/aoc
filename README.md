@@ -18,7 +18,7 @@
   - `**` Day 13: Care Package ([q](2019/13.q))
   - `**` Day 14: Day 14: Space Stoichiometry ([q](2019/14.q))
   - `__` Day 15: Day 15: Oxygen System
-  - `*_` Day 16: Day 16: Flawed Frequency Transmission ([q](2019/16.q))
+  - `**` Day 16: Day 16: Flawed Frequency Transmission ([q](2019/16.q))
 
 **2018**
 
