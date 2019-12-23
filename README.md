@@ -19,6 +19,12 @@
   - `**` Day 14: Day 14: Space Stoichiometry ([q](2019/14.q))
   - `__` Day 15: Day 15: Oxygen System
   - `**` Day 16: Day 16: Flawed Frequency Transmission ([q](2019/16.q))
+  - `__` Day 17
+  - `__` Day 18
+  - `__` Day 19
+  - `__` Day 20
+  - `__` Day 21
+  - `*_` Day 22: Slam Shuffle ([q](2019/22.q))
 
 **2018**
 
