@@ -25,6 +25,8 @@
   - `__` Day 20
   - `__` Day 21
   - `*_` Day 22: Slam Shuffle ([q](2019/22.q))
+  - `__` Day 23
+  - `*_` Day 24: Planet of Discord ([q](2019/24.q))
 
 **2018**
 
