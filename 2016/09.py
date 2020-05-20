@@ -1,4 +1,4 @@
-# --- Day 9: Explosives in Cyberspace ---
+"""--- Day 9: Explosives in Cyberspace ---"""
 
 def recurse(chomp, recurse_level, recurse_once):
 
@@ -10,7 +10,7 @@ def recurse(chomp, recurse_level, recurse_once):
     if chomp[i] == "(":
       rb = chomp.find(")", i)
       marker = chomp[i+1:rb]
-      count, multi = [ int(x) for x in marker.split("x") ]
+      count, multi = [int(x) for x in marker.split("x")]
       length += multi * recurse(chomp[rb+1:rb+1+count], recurse_level+1, recurse_once)
       i = rb + count + 1 # skip over "(AxB)..."
     elif chomp[i] == "\n":
@@ -21,13 +21,13 @@ def recurse(chomp, recurse_level, recurse_once):
 
   return length
 
-with open ("input/09.txt") as instructions:
+with open("input/09.txt", "r") as f:
 
   part1 = part2 = 0
 
-  for instruction in instructions:
+  for instruction in f:
     part1 += recurse(instruction, 0, True)
     part2 += recurse(instruction, 0, False)
 
-  print "Part 1:",part1
-  print "Part 2:",part2
+  print(part1)
+  print(part2)

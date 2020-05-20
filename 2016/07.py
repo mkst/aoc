@@ -1,28 +1,25 @@
-# --- Day 7: Internet Protocol Version 7 ---
+"""--- Day 7: Internet Protocol Version 7 ---"""
 
-with open ("input/07.txt") as instructions:
+with open ("input/07.txt", "r") as f:
 
   part_1 = part_2 = 0
 
-  for instruction in instructions:
+  for instruction in f:
     abba_bad = abba_good = False
 
     in_square_brackets = False
 
-    aba_potentials = [] 
+    aba_potentials = []
     bab_potentials = []
-
     # do the work
     for i in range(0, len(instruction) - 3):
-
       # common to both parts
       if instruction[i] == "[":
         in_square_brackets = True
         continue
-      elif instruction[i] == "]":
+      if instruction[i] == "]":
         in_square_brackets = False
         continue
-
       # part 2
       if instruction[i] == instruction[i+2]:
         if instruction[i] != instruction[i+1]:
@@ -30,7 +27,6 @@ with open ("input/07.txt") as instructions:
             aba_potentials.append(instruction[i:i+3])
           else:
             bab_potentials.append(instruction[i:i+3])
-
       # part 1
       if instruction[i] != instruction[i+3]:   # a__b
         continue
@@ -41,7 +37,6 @@ with open ("input/07.txt") as instructions:
       if in_square_brackets:
         abba_bad = True
       abba_good = True
-
     # ugly hack to get the final 3 chars
     if len(instruction) > 2:
       if instruction[i+1] == instruction[i+3]:
@@ -61,5 +56,5 @@ with open ("input/07.txt") as instructions:
           part_2 += 1
           break
 
-  print "Part 1:",part_1
-  print "Part 2:",part_2
+  print(part_1)
+  print(part_2)

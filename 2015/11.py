@@ -1,14 +1,13 @@
-# --- Day 11: Corporate Policy ---
+"""--- Day 11: Corporate Policy ---"""
 
 def containsStraight(p):
-
-  for i in range (0, len(p) - 2):
+  for i in range(len(p) - 2):
     if ord(p[i]) + 2 == ord(p[i+1]) + 1 == ord(p[i+2]):
       return True # break early
   return False
 
 def containsIllegals(p):
-  illegals = [ "i", "o", "l" ]
+  illegals = ["i", "o", "l"]
 
   for i in illegals:
     if i in p:
@@ -30,26 +29,22 @@ def checkPass(password):
   return containsStraight(password) and containsDouble(password) and not containsIllegals(password)
 
 def incr(s):
-  if s == '': return 'a'
-  elif s[-1] < 'z': return s[0:-1] + chr(ord(s[-1])+1)
-  else: return incr(s[:-1]) + 'a'
+  if s == '':
+    return 'a'
+  if s[-1] < 'z':
+    return s[0:-1] + chr(ord(s[-1])+1)
+  return incr(s[:-1]) + 'a'
 
 def day_11 (instructions):
   password = incr(instructions)
 
   while not checkPass(password):
     password = incr(password)
-
-  #print instructions + " => " + password
   return password
 
-from itertools import product, islice, combinations_with_replacement
-from string import ascii_lowercase
-import sys
-
-with open("input/11.txt") as instructions:
-  for line in instructions:
-    a = day_11(line.replace("\n",""))
+with open("input/11.txt") as f:
+  for line in f:
+    a = day_11(line.replace("\n", ""))
     b = day_11(incr(a))
-    print a
-    print b
+    print(a)
+    print(b)

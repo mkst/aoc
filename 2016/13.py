@@ -1,4 +1,4 @@
-# --- Day 13: A Maze of Twisty Little Cubicles ---
+"""--- Day 13: A Maze of Twisty Little Cubicles ---"""
 
 def decisions(x, y):
   d = []
@@ -16,11 +16,9 @@ def decisions(x, y):
   return d
 
 def solve(x, y, steps, destination, max_steps):
-
-  if max_steps > 0 and len(steps) > max_steps:
+  if 0 < max_steps < len(steps):
     return
-
-  if not [x,y] in visited and len(steps) <= 50:
+  if [x, y] not in visited and len(steps) <= 50:
     visited.append([x,y])
 
   if [x,y] == destination:
@@ -36,25 +34,22 @@ office = []
 results = []
 visited = []
 
-with open("input/13.txt") as instructions:
-
+with open("input/13.txt", "r") as instructions:
   favourite_number = int(instructions.read())
-
   X = Y = 100
-
   # pre-populate 100x100 grid
-  for y in range(0, Y):
+  for y in range(Y):
     office.append([])
-    for x in range(0, X):
+    for x in range(X):
       res = x*x + 3*x + 2*x*y + y + y*y + favourite_number
       b = str(bin(res))[2:]
       ones = [a for a in b if a == "1"]
       office[y].append("." if len(ones) % 2 == 0 else "#")
 
   # optimise so we dont take too long
-  solve(1, 1, [], [31,39], X)
+  solve(1, 1, [], [31, 39], X)
 
   results.sort(key=lambda x: len(x))
 
-  print "Part 1:",len(results[0])
-  print "Part 2:",len(visited)
+  print(len(results[0]))
+  print(len(visited))
