@@ -1,4 +1,4 @@
-# --- Day 14: One-Time Pad ---
+"""--- Day 14: One-Time Pad ---"""
 
 import hashlib
 
@@ -6,8 +6,8 @@ def generate_hashes(count, hash_count, salt, key):
   h = []
   for i in range(key, key + count):
     m = salt + str(i)
-    for j in range(0, hash_count):
-      m = hashlib.md5(m).hexdigest()
+    for _ in range(hash_count):
+      m = hashlib.md5(m.encode('utf-8')).hexdigest()
     h.append(m)
   return h
 
@@ -35,14 +35,11 @@ def solve(salt, key_length, hash_count):
         break # only use first instance
       j += 1
     i += 1
-  return key
+  return key[-1]
 
-with open("input/14.txt") as input:
+with open("input/14.txt", "r") as f:
 
-  #salt = "abc"
-  salt = input.read()[:-1] # drop trailing "\n"
+  salt = f.read()[:-1] # drop trailing "\n"
 
-  key_length = 64
-
-  print "Part 1:",solve(salt, key_length, 1)[-1]
-  print "Part 2:",solve(salt, key_length, 1+2016)[-1]
+  print(solve(salt, 64, 1))
+  print(solve(salt, 64, 1+2016))

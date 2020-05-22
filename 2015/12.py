@@ -1,41 +1,25 @@
-# --- Day 12: JSAbacusFramework.io ---
+"""--- Day 12: JSAbacusFramework.io ---"""
 
-import re
 import json
 
-def get_value_of_string(string):
-  total = 0
+def process(data, ignore_red):
+    total = 0
+    data_type = type(data)
+    if data_type == list:
+        for item in data:
+            total += process(item, ignore_red)
+        return total
+    if data_type == dict:
+        for _, item in data.items():
+            if ignore_red and item == 'red':
+                return 0
+            total += process(item, ignore_red)
+        return total
+    if data_type == int:
+        return data
+    return 0
 
-  l = re.sub("[^0-9\-]", " ", string)
-  split = l.split(" ")
-
-  for s in split:
-    if s != "":
-      total+= int(s)
-
-  return total
-
-def day_12 (instructions):
-
-  red = 0
-  no_red = 0
-
-  for block in instructions:
-    line = block.split("]]")
-
-    for l in line:
-
-      # strip out all the redness
-      l_ = re.sub("{.*:\"red\".*}", "",l)
-
-      #if l.find(":\"red\"") > 0:
-      #  print "before",l,"\nafter",l_
-
-      red += get_value_of_string(l)
-      no_red += get_value_of_string(l_)
-
-  return { "red" : red, "no_red" : no_red }
-
-with open("input/12.txt") as instructions:
-  res = day_12(instructions)
-  print res["red"]
+with open("input/12.txt") as f:
+    j = json.load(f)
+    print(process(j, False))
+    print(process(j, True))

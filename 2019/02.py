@@ -33,30 +33,35 @@ class VM:
 
 
 with open("input/02.txt", "r") as f:
-  input = [int(x) for x in f.readlines()[0].strip().split(',')]
+    input = [int(x) for x in f.readlines()[0].strip().split(',')]
 
-  vm = VM(input[:], "a", [], [])
-  vm.write(1, 12)
-  vm.write(2, 2)
-  vm.init()
-  r = vm.run()
-  print (r)
+    vm = VM(input[:], "a", [], [])
+    vm.write(1, 12)
+    vm.write(2, 2)
+    vm.init()
+    r = vm.run()
+    print(r)
+    # 8017076
+    noun, verb = 0, 0
 
-  noun, verb = 0, 0
+    def lt(x, y):
+        if x is None:
+            return True
+        return x < y
 
-  while vm.run() < 19690720:
-      noun += 1
-      vm.write(1, noun)
-      vm.write(2, verb)
-      vm.init()
+    while lt(vm.run(), 19690720):
+        noun += 1
+        vm.write(1, noun)
+        vm.write(2, verb)
+        vm.init()
 
-  noun -= 1
+    noun -= 1
 
-  while vm.run() != 19690720:
-      verb += 1
-      vm.write(1, noun)
-      vm.write(2, verb)
-      vm.init()
+    while vm.run() != 19690720:
+        verb += 1
+        vm.write(1, noun)
+        vm.write(2, verb)
+        vm.init()
 
-  print (100*noun + verb)
-  # 3146
+    print(100*noun + verb)
+    # 3146

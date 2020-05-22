@@ -1,4 +1,4 @@
-# --- Day 13: Knights of the Dinner Table ---
+"""--- Day 13: Knights of the Dinner Table ---"""
 
 from itertools import permutations
 
@@ -9,9 +9,8 @@ def day_13 (instructions, add_self):
     guests["Mark"] = {}
 
   for line in instructions:
-
     # Carol would gain 37 happiness units by sitting next to Alice.
-    guest,_,gain,happiness,_,_,_,_,_,_,neighbour = line.replace(".\n", "").split(" ")
+    guest, _, gain, happiness, _, _, _, _, _, _, neighbour = line.replace(".\n", "").split(" ")
 
     happiness = int(happiness)
 
@@ -31,10 +30,9 @@ def day_13 (instructions, add_self):
 
   for p in permutations(guests):
     happy = 0
-    for i in range (0, len(p) - 1):
+    for i in range(len(p) - 1):
       happy += guests[p[i]][p[i+1]]
       happy += guests[p[i+1]][p[i]]
-
     #wraparound
     happy += guests[p[len(p) - 1]][p[0]]
     happy += guests[p[0]][p[len(p) - 1]]
@@ -43,6 +41,6 @@ def day_13 (instructions, add_self):
   return max(h)
 
 with open("input/13.txt") as instructions:
-  print day_13(instructions, False)
+  print(day_13(instructions, False))
 with open("input/13.txt") as instructions:
-  print day_13(instructions, True)
+  print(day_13(instructions, True))

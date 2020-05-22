@@ -1,48 +1,23 @@
-# --- Day 18: Like a Rogue ---
+"""--- Day 18: Like a Rogue ---"""
 
-def solve(instruction, max_rows):
-  rows = [instruction]
-  length = len(instruction)
+def solve(line, max_rows):
+    safes = sum([1 for x in line if x == "."])
 
-  for row in range(0, max_rows - 1):
-    line = rows[-1]
-    out = ""
-    for i in range(0, length):
-      if i == 0:
-        if line[i+1] == "^":
-          out += "^"
-        else:
-          out += "."
-      elif i == length - 1:
-        if line[i-1] == "^":
-          out += "^"
-        else:
-          out += "."
-      else:
-        l = line[i-1]
-        c = line[i]
-        r = line[i+1]
+    for _ in range(max_rows - 1):
+        out = "^" if line[1] == "^" else "."
+        for i in range(1, len(instruction) - 1):
+            lcr = line[i-1:i+2]
+            if lcr in ["^^.", ".^^", "^..", "..^"]:
+                out += "^"
+            else:
+                out += "."
+        out += "^" if line[-2] == "^" else "."
+        safes += sum([1 for x in out if x == "."])
+        line = out
 
-        if l == "^" and c == "^" and r == ".":
-          out += "^"
-        elif l == "." and c == "^" and r == "^":
-          out += "^"
-        elif l == "^" and c == "." and r == ".":
-          out += "^"
-        elif l == "." and c == "." and r == "^":
-          out += "^"
-        else:
-          out += "."
-    rows.append(out)
-    
-  safes = 0
+    return safes
 
-  for r in rows:
-    safes += sum([ 1 for x in r if x == "." ])
-  return safes
-
-
-with open("input/18.txt") as instructions:
-  instruction = instructions.read()[:-1]
-  print "Part 1:",solve(instruction, 40)
-  print "Part 2:",solve(instruction, 400000)
+with open("input/18.txt", "r") as f:
+    instruction = f.read()[:-1]
+    print(solve(instruction, 40))
+    print(solve(instruction, 400000))

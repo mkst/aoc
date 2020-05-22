@@ -1,4 +1,4 @@
-# --- Day 2: Bathroom Security ---
+"""--- Day 2: Bathroom Security ---"""
 
 def solve(keypad, instructions, start_row, start_col):
 
@@ -11,24 +11,24 @@ def solve(keypad, instructions, start_row, start_col):
 
   for instruction in instructions:
     if instruction == "U":
-      if row > 0 and (keypad[row-1][col] != None):
+      if row > 0 and (keypad[row-1][col] is not None):
         row -= 1
     elif instruction == "D":
-      if row < rc and (keypad[row+1][col] != None):
+      if row < rc and (keypad[row+1][col] is not None):
         row += 1
     elif instruction == "L":
-      if col > 0 and (keypad[row][col-1] != None):
+      if col > 0 and (keypad[row][col-1] is not None):
         col -= 1
     elif instruction == "R":
-      if col < rc and (keypad[row][col+1] != None):
+      if col < rc and (keypad[row][col+1] is not None):
         col += 1
     elif instruction == "\n":
       code.append(keypad[row][col])
 
-  return "".join(map(lambda x: str(x), code))
+  return "".join(map(str, code))
 
-with open("input/02.txt", "r") as input:
-  instructions = input.read()
+with open("input/02.txt", "r") as f:
+  instructions = f.read()
 
   keypad = {}
 
@@ -39,7 +39,7 @@ with open("input/02.txt", "r") as input:
   keypad[3] = [None,  7,    8,    9  , None]
   keypad[4] = [None, None, None, None, None]
 
-  print "Part 1:",solve(keypad, instructions, 2, 2) # start on 5
+  print(solve(keypad, instructions, 2, 2)) # start on 5
 
   # part 2
   keypad[0] = [None, None,  1,  None, None]
@@ -48,4 +48,4 @@ with open("input/02.txt", "r") as input:
   keypad[3] = [None, "A",  "B", "C",  None]
   keypad[4] = [None, None, "D", None, None]
 
-  print "Part 2:",solve(keypad, instructions, 0, 2) # start on 5
+  print(solve(keypad, instructions, 0, 2)) # start on 5
