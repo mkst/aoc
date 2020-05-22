@@ -8,7 +8,7 @@ f:{[x]
   @[x;key c;+;value c]
   }
 
-s:enlist r:"J"$ "\t" vs first read0 `:input/06.txt
+s:`u#enlist r:"J"$ "\t" vs first read0 `:input/06.txt
 
 while[not (r:f r) in s;s,:r]
 count s

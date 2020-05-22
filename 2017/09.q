@@ -1,35 +1,28 @@
 /--- Day 9: Stream Processing ---
 
 rg:{
-  if[g;
-    $[x=">";
-      g::0b; / no longer garbage
-      gc+:1  / else increment garbage count
+  $[first x;   / inside garbage?
+    $[y=">";   / > is the end-of-garbage marker
+      (0b;""); / no longer inside garbage, but still chomp '>' char
+      (1b;"")  / still inside garbage therefore chomp character
       ];
-    :""
-    ];
-  if[x="<";
-    g::1b;   / garbage section
-    :""
-    ];
-  x
-  };
+    $[y="<";   / < is the beginning-of-garbage marker
+      (1b;""); / we are in garbage, so chomp '<' char
+      (0b;y)   / we are NOT in garbage, therefore return character
+      ]
+    ]
+  }\[0b;]     / initialise outside of garbage
 
 cg:{
-  if["{"=x;
-    d+:1
-    ];
-  if["}"=x;
-    :d-:1
-    ];
-  :0;
-  };
+  $[y="{";    / { is the start of a new group
+    x+1;      / therefore increment group level counter
+    y="}";    / } is the end of a new group
+    x-1;      / threfore decrement group level counter
+    x         / otherwise do nothing to the counter
+    ]
+  }\[0;]      / initialise at zero
 
-g:0b / garbage?
-d:1  / depth
-gc:0 / garbage count
-
-sum cg each raze rg each ssr[;"!?";""] first read0 `:input/09.txt
+sum {x where x > prev x} cg raze last f:flip rg ssr[;"!?";""] first read0 `:input/09.txt
 /12505
-gc
+sum 1=deltas where first f
 /6671

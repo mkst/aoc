@@ -2,7 +2,7 @@
 
 \l 10.q
 
-sum raze h:raze each 0b vs''hash each (first read0 `:input/14.txt),/:"-",'string til 128
+sum raze h:raze each 0b vs''hash peach (first read0 `:input/14.txt),/:"-",'string til 128
 /8214
 
 v:(`u#enlist 0N 0N)!enlist 0N; / visited, add dummy value to setup key
