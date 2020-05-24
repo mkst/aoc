@@ -1,20 +1,13 @@
 /--- Day 15: Dueling Generators ---
 
-f:16807 48271
-m:2147483647
-c:0;
-{
-  c+:1*(~/) -16#'0b vs'x:(f*x) mod m;
-  x
- }/[40000000;f*i:first ("    i";" ") 0: `:input/15.txt];
-
-c
+g:{ (first[x]+(~/)mod[r;65536];r:(16807 48271*last x) mod 2147483647) }/[40000000;]
+first g (0;) i:first ("    j";" ") 0: `:input/15.txt
 /650
 
 A:B:()
 
-{ A,:$[0=mod[x:(first[f]*x) mod m;4];x;()];x }/[{ 5000000>count A };first i];
-{ B,:$[0=mod[x:(last[f]*x) mod m;8];x;()];x }/[{ 5000000>count B };last i];
+{ if[0=mod[x:(x*16807) mod 2147483647;4];A,:x mod 65536];x }/[{ 5000000>count A };first i];
+{ if[0=mod[x:(x*48271) mod 2147483647;8];B,:x mod 65536];x }/[{ 5000000>count B };last i];
 
-sum {x~y}'[(-16#'0b vs 'B);(-16#'0b vs'A)]
+sum A~'B
 /336

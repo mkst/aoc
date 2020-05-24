@@ -1,7 +1,7 @@
 /--- Day 19: Medicine for Rudolph ---
 
-r:r _ first where ""~/:r:read0 `:input/19.txt;
-s:flip string ("s s";" ")0:-1_r;
+r:r _ first where ""~/:r:read0 `:input/19.txt
+s:flip string ("s s";" ")0:-1_r
 
 count distinct raze { {[x;y;z;l] x:@[string x;y;:;z];raze x _/c#(y+c:count[l]-1) }[x;;z;y] each ss[x;y] }[last r;].'s
 /518

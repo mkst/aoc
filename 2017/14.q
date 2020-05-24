@@ -6,22 +6,21 @@ sum raze h:raze each 0b vs''hash peach (first read0 `:input/14.txt),/:"-",'strin
 /8214
 
 v:(`u#enlist 0N 0N)!enlist 0N; / visited, add dummy value to setup key
-g:0;                           / group id
 
-f:{
-  if[not h[x;y];
+f:{[x;id]
+  if[not h . x;   / ignore 'off' bits
     :()
     ];
-  if[(x;y) in key v;
+  if[x in key v;  / ignore already visited
     :()
     ];
-  v[(x;y)]:g;
-  .z.s[x+1;y]; / go right
-  .z.s[x-1;y]; / go left
-  .z.s[x;y+1]; / go up
-  .z.s[x;y-1]; / go down
+  v[x]:id;
+  .z.s[x+1 0;id]; / go right
+  .z.s[x-1 0;id]; / go left
+  .z.s[x+0 1;id]; / go up
+  .z.s[x-0 1;id]; / go down
   };
 
-til[128]{g+:1;f[x;y]}\:/:til 128;
+f'[til[128] cross til 128;til 128*128];
 -1+count distinct value v
 /1093

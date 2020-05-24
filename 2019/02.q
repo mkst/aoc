@@ -52,7 +52,7 @@ if[`02.q~.z.f;
   I:"J"$"," vs first read0 `:input/02.txt;
 
   -1@string first first f[@[I;1 2;:;12 2];0];
-
+  /8017076
   N:0;V:0;T:19690720;W:1b;
 
   while[T>R:first first f[@[I;1 2;:;(N;V)];0];N+:1];

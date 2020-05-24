@@ -14,9 +14,9 @@ f:{
 f2:{ f[x;1#y;y except first y] };
 
 r:f2[sum[i]%3;] i:desc "J"$read0 `:input/24.txt;
-(*/) r first iasc (*/) each r:r where c=min c:count each r
+prd r first iasc prd each r:r where c=min c:count each r
 /10439961859
 
 r:f2[sum[i]%4;i];
-(*/) r first iasc (*/) each r:r where c=min c:count each r
+prd r first iasc prd each r:r where c=min c:count each r
 /72050269
