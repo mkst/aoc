@@ -1,20 +1,17 @@
 /--- Day 17: Spinlock ---
 
 s:"J"$first read0 `:input/17.txt
-p:1 / position
 
-spinlock:{
-  $[y=p::1+(p+s) mod y;
-    x,y;
-    (p#x),y,(p-y)#x
-    ]
-  };
+spinlock:{ last {
+    (p;) $[y=p:1+mod[s+first x;y];
+            last[x],y;               / append
+            (p#last x),y,p _ last x] / insert
+    }/[0;x]
+  }
 
-res:spinlock over til 1+2017
-res p+1
+res:spinlock 1 + til 2017
+res 1+res?2017
 /596
 
-p:1;
-{ if[1=p::1+(p+s) mod x;r::x] } each 1 + til 50000000;
-r
+last where 1={ 1+(x+y) mod z }[s]\[til 50000000]
 /39051595

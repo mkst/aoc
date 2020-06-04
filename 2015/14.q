@@ -1,10 +1,8 @@
 /--- Day 14: Reindeer Olympics ---
 
-f:flip `n`s`t`r!("s  i  i      i";" ")0: `:input/14.txt
-update p:0 from `f;
+t:flip `n`s`t`r!("s  j  j      j";" ")0: `:input/14.txt
 
-max sum r:flip 2503#'{(x[`t]#x`s),x[`r]#0i } each f
+max last f:flip value exec sums 2503#((t#s),r#0) by n from t
 /2696
-{ update p+1 from `f where x = max x } each sums r;
-exec max p from f
+max sum each flip f=max flip f
 /1084

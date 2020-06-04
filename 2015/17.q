@@ -1,19 +1,17 @@
 /--- Day 17: No Such Thing as Too Much ---
 
-TARGET:150
+B:(count[i]#.Q.a)!i:desc "J"$ read0 `:input/17.txt
 
-buckets:(count[i]#.Q.a)!i:desc "J"$ read0 `:input/17.txt
-
-f:{[current;available;indexes]
-  // target reached, return
-  if[TARGET=sum buckets indexes;:enlist indexes];
-  // filter available
-  available:available where buckets[available] <= min buckets[indexes];
+f:{
+  // success
+  if[x=s:sum B y;:enlist y];
+  // discover possibilities
+  w:where (z > last y) and x >= B[z] + s;
   // recurse
-  raze .z.s'[c w;available _/:w;indexes,/:available w:where 0<=c:current-/:buckets[available]]
+  raze .z.s'[x;y,/:z w;z _/:w]
  }
 
-count c:distinct asc each f[TARGET;key buckets;()]
+count r:f[150;"";key B]
 /4372
-min count each c
+min count each r
 /4

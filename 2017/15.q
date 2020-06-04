@@ -6,8 +6,8 @@ first g (0;) i:first ("    j";" ") 0: `:input/15.txt
 
 A:B:()
 
-{ if[0=mod[x:(x*16807) mod 2147483647;4];A,:x mod 65536];x }/[{ 5000000>count A };first i];
-{ if[0=mod[x:(x*48271) mod 2147483647;8];B,:x mod 65536];x }/[{ 5000000>count B };last i];
+{ if[0=mod[x:mod[x*16807;2147483647];4];A,:x];x }/[{ 5000000>count A };first i];
+{ if[0=mod[x:mod[x*48271;2147483647];8];B,:x];x }/[{ 5000000>count B };last i];
 
-sum A~'B
+sum mod[A;65536]=mod[B;65536]
 /336

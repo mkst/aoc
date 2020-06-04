@@ -1,17 +1,16 @@
 /--- Day 16: Permutation Promenade ---
 
-dance:{[d;x]
+i:{
   $["s"=x 0;
-    neg["J"$1_x] rotate d;
+    rotate[neg["J"$1_x];];
     "x"=x 0;
-    @[d;p;:;reverse d p:"J"$"/"vs 1_x];
-    @[d;d?p;:;reverse p:"/"vs 1_x]
+    {@[x;y;:;reverse x y]}[;"J"$"/"vs 1_x];
+    {@[x;x?y;:;reverse y]}[;"/"vs 1_x]
     ]
-  };
+ } peach "," vs first read0 `:input/16.txt
 
-dance over (enlist 16#.Q.a),i:"," vs first read0 `:input/16.txt
+{y x}/[16#.Q.a;i]
 /ceijbfoamgkdnlph
 
-res:{ dance over (enlist x),i }\[16#.Q.a]
-res 1000000000 mod count res
+r 1000000000 mod count r:{ {y x}/[y;x] }[i]\[16#.Q.a]
 /pnhajoekigcbflmd

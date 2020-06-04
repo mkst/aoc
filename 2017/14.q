@@ -14,7 +14,7 @@ f:{[x;id]
   if[x in key v;  / ignore already visited
     :()
     ];
-  v[x]:id;
+  v[x]:id;        / set region for this bit
   .z.s[x+1 0;id]; / go right
   .z.s[x-1 0;id]; / go left
   .z.s[x+0 1;id]; / go up
