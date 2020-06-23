@@ -1,23 +1,22 @@
 /--- Day 19: A Series of Tubes ---
 
-g:read0 `:input/19.txt / input
-d:"D"                  / initial direction
-x:first where "|"=g 0  / starting x
-y:0                    / starting y
-v:()                   / visited chars
-s:0                    / steps taken
+g:read0 `:input/19.txt
 
-cont:{[] y+:("DULR"!1 -1  0 0)d;x+:("DULR"! 0 0 -1 1)d };
-cros:{[] d::"UDLR" first where (not d="DURL") and not " "=(g[y-1;x];g[y+1;x];g[y;x-1];g[y;x+1]) };
-move:{[]
-  $[null c:g[y;x];:();              / finished
-    c="+";[cros[];cont[]];          / crossroad
-    [v,:$[c in .Q.A;c;()];cont[]]]; / continue
-  :c;                               / return current pos
+udlr:(-1 0;1 0;0 -1;0 1)
+move:{
+  d:x 0;                / direction
+  yx:x 1;               / yx coord
+  v:x 2;                / visited
+  if[null n:g . yx;:x]; / complete
+  if["+"=n;             / crossroads
+    d:"UDLR" first where (not d="DURL") and not null .[g;] each yx+/:udlr
+    ];
+  (d;yx+:udlr"UDLR"?d;v,$[n in .Q.A;n;()])
   };
 
-while[count move[];s+:1];
--1 v;
+r:move\[("D";0,first where "|"=g 0;"")]
+
+-1 last last r;
 /NDWHOYRUEA
-s
+-1+count r
 /17540

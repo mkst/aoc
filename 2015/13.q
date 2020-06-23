@@ -2,12 +2,12 @@
 
 a:`g`n`h xcols flip `g`h`n!("s  i      s";" ") 0: { -1_ssr[x;"lose ";"lose -"]} each read0`:input/13.txt
 
-combos:{ (1+count x)#'{raze y,/:'x except/:y}[x;]/[count[x]-1;x] }
-arrange:{ {sum exec h from a where g in x, n in x} each -2#'prev\[count[x]-2;x] }
+sw2:{-2#'-2_prev\[x]}
 
-max sum flip arrange each combos distinct (raze/)exec (g;n) from a
+combos:{ raze each { (raze y),/:'x except/:raze y }[x;]/[-1+count x;first x],\:first x }
+arrange:{ sum { exec sum h from a where g in x, n in x } each sw2 x }
+
+max arrange peach combos d:distinct raze exec g, n from a
 /618
-
-/ add myself and re-run
-max sum flip arrange each combos `me,distinct (raze/)exec (g;n) from a
-/601i
+max arrange peach combos d,`me
+/601
