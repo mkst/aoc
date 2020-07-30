@@ -1,0 +1,13 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+authors = ["Mark Street <mkst@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+md5 = "0.7.0"
+
+[lib]
+name = "aoc"
+path = "src/aoc.rs"
+crate-type = ["dylib"]

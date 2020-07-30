@@ -1,31 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <openssl/evp.h>
+
+#include <openssl/md5.h>
 
 #include "k.h"
 
-// gcc aoc.c -shared -lcrypto -fPIC -o aoc.so
+// gcc aoc.c -shared -lcrypto -fPIC -o aoc.so -std=c99
 
 // md5C:*"../src/aoc.so"2:`md5!1
 // md5:{[x] `c md5C x}
 K md5(const S x)
 {
-  unsigned int MD5_HASH_LENGTH = 16;
-  unsigned char digest[MD5_HASH_LENGTH];
-
-  EVP_MD_CTX *mdctx = EVP_MD_CTX_new();
-  // EVP_MD_CTX *mdctx = EVP_MD_CTX_create();
-  EVP_MD_CTX_init(mdctx);
-  EVP_DigestInit(mdctx, EVP_md5());
-  EVP_DigestUpdate(mdctx, x, strlen(x));
-  EVP_DigestFinal(mdctx, digest, &MD5_HASH_LENGTH);
-  EVP_MD_CTX_free(mdctx);
-  // EVP_MD_CTX_destroy(mdctx);
-
-  K d = k((S)'I', MD5_HASH_LENGTH);
-  for (U i = 0; i < MD5_HASH_LENGTH; i++)
+  unsigned char digest[16];
+  MD5((const unsigned char*)x, strlen(x), digest);
+  K d = k((S)'I', 16);
+  for (U i = 0; i < 16; i++)
   {
-    ((I*)d)[i] = (unsigned char) digest[i];
+    ((I*)d)[i] = digest[i];
   }
   return d;
 }
@@ -53,7 +45,6 @@ K ss(const S x, const S y)
     ((I*)tmp)[fnd++] = ptr - p_idx;
     ptr = ptr + ly * sizeof(char);
   }
-
   K r = k((S)'I', fnd);
   for (int i = 0; i < fnd; i++)
   {

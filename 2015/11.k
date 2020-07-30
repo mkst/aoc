@@ -5,8 +5,8 @@ a:"abcdefghijklmnopqrstuvwxyz"
 n:{[x]                              / generate next pass
   $[0=#x
       "a"
-    "z">*|x
-      (-1_ x),a@1+a?*|x
+    "z">last x
+      (-1_ x),a@1+a?last x
       (n@-1_x),"a"]}
 
 s:{[x] (1_-':&1=-':a?x)'1}          / straight
