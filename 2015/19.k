@@ -1,6 +1,7 @@
 /--- Day 19: Medicine for Rudolph ---
 
-ssC:*"../src/aoc.so"2:`ss!2
+/ssC:*"../c/aoc.so"2:`ss!2
+ssC:*"../rs/target/release/libaoc.so"2:`ss!2
 ss:{[x;y] (),ssC[x,0x0;y,0x0]}
 
 sw:{[x;y] (y-1)_(-y)#',\x}
@@ -22,7 +23,7 @@ f:{[x] / (molecule;transformations)
     ,p
     (+(ssr[m;;].'r@w;t+c w:&0<c:#'ss[m;]'*'r)),1_x]}
 
-*|*f/:(,(m;0))
+last first f/:(,(m;0))
 
 \
 f2:{[x;y;z] $[D[`FOUND]|x~1#"e";(D[`FOUND]:1b;z);,/f2[;y;]'[ssr[x;;].'y@w;z+c w:&0<c:#'ss[x;]'*'y]]}

@@ -19,11 +19,9 @@ f:{[x]
       n . x 1 3
       ((a;o;l;r)"AOLR"?x[1;0]). x 0 2 4]}
 
-W:`!0N / Wires
-{[x;y] f'x;W}[i:" "\'0:"input/07.txt"]/:0;
-A:W`a;A
+{[x;y] f'x;W}[i:" "\'0:"input/07.txt"]/:W:`!0N;
+W`a
 
-W:`!0N
-i:@[i;&(,"b")~/last'i;:;,($A;"->";,"b")]
-{[x;y] f'x;W}[i]/:0;
-*W`a
+i:@[i;&(,"b")~/last'i;:;,($W`a;"->";,"b")]
+{[x;y] f'x;W}[i]/:W:`!0N;
+W`a
