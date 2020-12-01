@@ -1,6 +1,6 @@
 //--- Day 1: Report Repair ---
 
-prd i where any 2020=j:i+/:i:"J"$read0 `:input/01.txt
+prd i inter j:2020-i:"J"$read0 `:input/01.txt
 /996996
-prd i where any any 2020=i+\:j
+prd i inter raze j-/:i
 /9210402
