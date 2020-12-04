@@ -8,7 +8,7 @@
 | `**`  | Day 1: Report Repair                           | [q](2020/01.q) |
 | `**`  | Day 2: Password Philosophy                     | [q](2020/02.q) |
 | `**`  | Day 3: Toboggan Trajectory                     | [q](2020/03.q) |
-| `__`  | Day 4:                                         |                |
+| `**`  | Day 4: Passport Processing                     | [q](2020/04.q) |
 | `__`  | Day 5:                                         |                |
 | `__`  | Day 6:                                         |                |
 | `__`  | Day 7:                                         |                |
