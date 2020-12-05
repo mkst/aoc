@@ -9,7 +9,7 @@
 | `**`  | Day 2: Password Philosophy                     | [q](2020/02.q) |
 | `**`  | Day 3: Toboggan Trajectory                     | [q](2020/03.q) |
 | `**`  | Day 4: Passport Processing                     | [q](2020/04.q) |
-| `__`  | Day 5:                                         |                |
+| `**`  | Day 5: Binary Boarding                         | [q](2020/05.q) |
 | `__`  | Day 6:                                         |                |
 | `__`  | Day 7:                                         |                |
 | `__`  | Day 8:                                         |                |
