@@ -10,7 +10,7 @@
 | `**`  | Day 3: Toboggan Trajectory                     | [q](2020/03.q) |
 | `**`  | Day 4: Passport Processing                     | [q](2020/04.q) |
 | `**`  | Day 5: Binary Boarding                         | [q](2020/05.q) |
-| `__`  | Day 6:                                         |                |
+| `**`  | Day 6: Custom Customs                          | [q](2020/06.q) |
 | `__`  | Day 7:                                         |                |
 | `__`  | Day 8:                                         |                |
 | `__`  | Day 9:                                         |                |
