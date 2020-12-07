@@ -11,7 +11,7 @@
 | `**`  | Day 4: Passport Processing                     | [q](2020/04.q) |
 | `**`  | Day 5: Binary Boarding                         | [q](2020/05.q) |
 | `**`  | Day 6: Custom Customs                          | [q](2020/06.q) |
-| `__`  | Day 7:                                         |                |
+| `**`  | Day 7: Handy Haversacks                        | [q](2020/07.q) |
 | `__`  | Day 8:                                         |                |
 | `__`  | Day 9:                                         |                |
 | `__`  | Day 10:                                        |                |
