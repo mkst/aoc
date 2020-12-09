@@ -12,8 +12,8 @@
 | `**`  | Day 5: Binary Boarding                         | [q](2020/05.q) |
 | `**`  | Day 6: Custom Customs                          | [q](2020/06.q) |
 | `**`  | Day 7: Handy Haversacks                        | [q](2020/07.q) |
-| `__`  | Day 8:                                         |                |
-| `__`  | Day 9:                                         |                |
+| `**`  | Day 8: Handheld Halting                        | [q](2020/08.q) |
+| `**`  | Day 9: Encoding Error                          | [q](2020/09.q) |
 | `__`  | Day 10:                                        |                |
 | `__`  | Day 11:                                        |                |
 | `__`  | Day 12:                                        |                |
