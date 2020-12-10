@@ -14,7 +14,7 @@
 | `**`  | Day 7: Handy Haversacks                        | [q](2020/07.q) |
 | `**`  | Day 8: Handheld Halting                        | [q](2020/08.q) |
 | `**`  | Day 9: Encoding Error                          | [q](2020/09.q) |
-| `__`  | Day 10:                                        |                |
+| `**`  | Day 10: Adapter Array                          | [q](2020/10.q) |
 | `__`  | Day 11:                                        |                |
 | `__`  | Day 12:                                        |                |
 | `__`  | Day 13:                                        |                |
