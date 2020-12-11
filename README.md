@@ -15,7 +15,7 @@
 | `**`  | Day 8: Handheld Halting                        | [q](2020/08.q) |
 | `**`  | Day 9: Encoding Error                          | [q](2020/09.q) |
 | `**`  | Day 10: Adapter Array                          | [q](2020/10.q) |
-| `__`  | Day 11:                                        |                |
+| `**`  | Day 11: Seating System                         | [q](2020/11.q) |
 | `__`  | Day 12:                                        |                |
 | `__`  | Day 13:                                        |                |
 | `__`  | Day 14:                                        |                |
