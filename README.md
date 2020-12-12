@@ -16,7 +16,7 @@
 | `**`  | Day 9: Encoding Error                          | [q](2020/09.q) |
 | `**`  | Day 10: Adapter Array                          | [q](2020/10.q) |
 | `**`  | Day 11: Seating System                         | [q](2020/11.q) |
-| `__`  | Day 12:                                        |                |
+| `**`  | Day 12: Rain Risk                              | [q](2020/12.q) |
 | `__`  | Day 13:                                        |                |
 | `__`  | Day 14:                                        |                |
 | `__`  | Day 15:                                        |                |
