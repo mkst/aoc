@@ -18,7 +18,7 @@
 | `**`  | Day 11: Seating System                         | [q](2020/11.q) |
 | `**`  | Day 12: Rain Risk                              | [q](2020/12.q) |
 | `__`  | Day 13:                                        |                |
-| `__`  | Day 14:                                        |                |
+| `**`  | Day 14: Docking Data                           | [q](2020/14.q) |
 | `__`  | Day 15:                                        |                |
 | `__`  | Day 16:                                        |                |
 | `__`  | Day 17:                                        |                |
