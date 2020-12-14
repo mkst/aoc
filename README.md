@@ -17,7 +17,7 @@
 | `**`  | Day 10: Adapter Array                          | [q](2020/10.q) |
 | `**`  | Day 11: Seating System                         | [q](2020/11.q) |
 | `**`  | Day 12: Rain Risk                              | [q](2020/12.q) |
-| `__`  | Day 13:                                        |                |
+| `**`  | Day 13: Shuttle Search                         | [q](2020/13.q) |
 | `**`  | Day 14: Docking Data                           | [q](2020/14.q) |
 | `__`  | Day 15:                                        |                |
 | `__`  | Day 16:                                        |                |

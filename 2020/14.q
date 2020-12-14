@@ -1,6 +1,6 @@
 //--- Day 14: Docking Data ---
 
-cf:{ distinct asc sum each x where each neg[c]#'0b vs'til "j"$2 xexp c:count x }
+cf:{ asc sum each x where each neg[c]#'0b vs'til prd (c:count x)#2 }
 
 // yuck
 m:{[x]
