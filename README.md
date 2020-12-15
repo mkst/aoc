@@ -19,7 +19,7 @@
 | `**`  | Day 12: Rain Risk                              | [q](2020/12.q) |
 | `**`  | Day 13: Shuttle Search                         | [q](2020/13.q) |
 | `**`  | Day 14: Docking Data                           | [q](2020/14.q) |
-| `__`  | Day 15:                                        |                |
+| `**`  | Day 15: Rambunctious Recitation                | [q](2020/15.q) |
 | `__`  | Day 16:                                        |                |
 | `__`  | Day 17:                                        |                |
 | `__`  | Day 18:                                        |                |
