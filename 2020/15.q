@@ -8,16 +8,15 @@ f:{[x]
   };
 
 i:"J"$","vs first read0 `:input/15.txt
-
 last f/[2020-count i;i]
-/ 257
+/257
 
 
 g:{[xy]
    x:first xy;
    y:last xy;
    // update dictionary
-   d[i:$[1=count d x;0;(-). reverse -2#d x]],:y;
+   d[i:$[1=count d x;0;0-(-/)@-2#d x]],:y;
    // return (last;turn)
    (i;y+1)
   };
