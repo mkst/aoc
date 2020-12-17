@@ -13,14 +13,11 @@ last f/[2020-count i;i]
 
 
 g:{[xy]
-   x:first xy;
-   y:last xy;
-   // update dictionary
-   d[i:$[1=count d x;0;0-(-/)@-2#d x]],:y;
-   // return (last;turn)
+   d[i:0-(-/)0^-2#d first xy],:y:last xy;
    (i;y+1)
   };
 
 d:(`u#i)!enlist each 1+til count i
+
 first g/[30000000-count i;(last i;1+count i)]
 /8546398

@@ -21,7 +21,7 @@
 | `**`  | Day 14: Docking Data                           | [q](2020/14.q) |
 | `**`  | Day 15: Rambunctious Recitation                | [q](2020/15.q) |
 | `__`  | Day 16:                                        |                |
-| `__`  | Day 17:                                        |                |
+| `**`  | Day 17: Conway Cubes                           | [q](2020/17.q) |
 | `__`  | Day 18:                                        |                |
 | `__`  | Day 19:                                        |                |
 | `__`  | Day 20:                                        |                |
