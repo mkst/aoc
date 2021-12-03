@@ -7,6 +7,7 @@
 |:------------:|:-----------------------------------------------|:---------------|
 | :star::star: | Day 1: Sonar Sweep                             | [q](2021/01.q) |
 | :star::star: | Day 2: Dive!                                   | [q](2021/02.q) |
+| :star::star: | Day 3: Binary Diagnostic                       | [q](2021/03.q) |
 
 **2020**
 
@@ -40,7 +41,7 @@
 
 **2019**
 
-| Stars | Day                                            | Solutions                                          |
+| Stars        | Day                                            | Solutions                                          |
 |:------------:|:-----------------------------------------------|:---------------------------------------------------|
 | :star::star: | Day 1: The Tyranny of the Rocket Equation      | [js](2019/01.js),                   [q](2019/01.q) |
 | :star::star: | Day 2: 1202 Program Alarm                      | [js](2019/02.js), [py](2019/02.py), [q](2019/02.q) |
