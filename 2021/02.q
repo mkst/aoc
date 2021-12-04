@@ -1,6 +1,6 @@
 // --- Day 2: Dive! ---
 
-i:flip "SJ"$flip 1#''" "vs'read0 `:input/02a.txt
+i:flip "SJ"$flip 1#''" "vs'read0 `:input/02.txt
 
 f:{ $[`f ~ first y; x + (last[y];0); `d ~ first y; x + (0;last[y]); x - (0;last[y])] }
 / (h;d)

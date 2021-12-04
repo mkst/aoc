@@ -8,6 +8,8 @@
 | :star::star: | Day 1: Sonar Sweep                             | [q](2021/01.q) |
 | :star::star: | Day 2: Dive!                                   | [q](2021/02.q) |
 | :star::star: | Day 3: Binary Diagnostic                       | [q](2021/03.q) |
+| :star::star: | Day 4: Giant Squid                             | [q](2021/04.q) |
+
 
 **2020**
 
