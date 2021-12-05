@@ -6,7 +6,7 @@ p:"J"$(3 cut)@''1_'6 cut 1 _ i
 f:{
   { $[1=count x;
       x;
-      (any all flip c) or any all c:last[x]|y=g:first x;
+      any all flip c,flip c:last[x]|y=g:first x;
       y*sum raze g*not c;
       (g;c)
       ]
