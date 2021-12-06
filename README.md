@@ -10,6 +10,7 @@
 | :star::star: | Day 3: Binary Diagnostic                       | [q](2021/03.q) |
 | :star::star: | Day 4: Giant Squid                             | [q](2021/04.q) |
 | :star::star: | Day 5: Hydrothermal Venture                    | [q](2021/05.q) |
+| :star::star: | Day 6: Lanternfish                             | [q](2021/06.q) |
 
 **2020**
 
