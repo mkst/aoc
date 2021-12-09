@@ -13,6 +13,7 @@
 | :star::star: | Day 6: Lanternfish                             | [q](2021/06.q) |
 | :star::star: | Day 7: The Treachery of Whales                 | [q](2021/07.q) |
 | :star::star: | Day 8: Seven Segment Search                    | [q](2021/08.q) |
+| :star::star: | Day 9: Smoke Basin                             | [q](2021/09.q) |
 
 **2020**
 
