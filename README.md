@@ -15,6 +15,7 @@
 | :star::star: | Day 8: Seven Segment Search                    | [q](2021/08.q) |
 | :star::star: | Day 9: Smoke Basin                             | [q](2021/09.q) |
 | :star::star: | Day 10: Syntax Scoring                         | [q](2021/10.q) |
+| :star::star: | Day 11: Dumbo Octopus                          | [q](2021/11.q) |
 
 **2020**
 
