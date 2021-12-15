@@ -19,6 +19,7 @@
 | :star::star: | Day 12: Passage Pathing                        | [q](2021/12.q) |
 | :star::star: | Day 13: Transparent Origami                    | [q](2021/13.q) |
 | :star::star: | Day 14: Extended Polymerization                | [q](2021/14.q) |
+| :star::star: | Day 15: Chiton                                 | [q](2021/15.q) |
 
 **2020**
 
