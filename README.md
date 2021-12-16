@@ -20,6 +20,7 @@
 | :star::star: | Day 13: Transparent Origami                    | [q](2021/13.q) |
 | :star::star: | Day 14: Extended Polymerization                | [q](2021/14.q) |
 | :star::star: | Day 15: Chiton                                 | [q](2021/15.q) |
+| :star::star: | Day 16: Packet Decoder                         | [q](2021/16.q) |
 
 **2020**
 
