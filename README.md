@@ -1,6 +1,12 @@
 # aoc
 [Advent Of Code](http://adventofcode.com/) solutions in a mixture of languages, predominantly Q/kdb+.
 
+**2022**
+
+| Stars        | Day                                            | Solutions      |
+|:------------:|:-----------------------------------------------|:---------------|
+| :star::star: | Day 1: Calorie Counting                        | [q](2022/01.q) |
+
 **2021**
 
 | Stars        | Day                                            | Solutions      |
