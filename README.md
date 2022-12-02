@@ -6,6 +6,7 @@
 | Stars        | Day                                            | Solutions      |
 |:------------:|:-----------------------------------------------|:---------------|
 | :star::star: | Day 1: Calorie Counting                        | [q](2022/01.q) |
+| :star::star: | Day 2: Rock Paper Scissors                     | [q](2022/02.q) |
 
 **2021**
 
