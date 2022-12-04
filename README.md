@@ -8,6 +8,7 @@
 | :star::star: | Day 1: Calorie Counting                        | [q](2022/01.q) |
 | :star::star: | Day 2: Rock Paper Scissors                     | [q](2022/02.q) |
 | :star::star: | Day 3: Rucksack Reorganization                 | [q](2022/03.q) |
+| :star::star: | Day 4: Camp Cleanup                            | [q](2022/04.q) |
 
 **2021**
 
