@@ -10,6 +10,7 @@
 | :star::star: | Day 3: Rucksack Reorganization                 | [q](2022/03.q) |
 | :star::star: | Day 4: Camp Cleanup                            | [q](2022/04.q) |
 | :star::star: | Day 5: Supply Stacks                           | [q](2022/05.q) |
+| :star::star: | Day 6: Tuning Trouble                          | [q](2022/06.q) |
 
 **2021**
 
