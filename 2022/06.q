@@ -1,9 +1,8 @@
 // --- Day 6: Tuning Trouble ---
 
-sw:{neg[x-1]_flip next\[x-1;y]}
-f:{x + first where {(count distinct x) = count x} each sw[x;y]};
+f:{y + count[x] - count (1_)/[{not y = count distinct y#x}[;y];x]}
 
-f[4;] i:first read0 `:input/06.txt
+f[;4] i:first read0 `:input/06.txt
 / 1238
-f[14;] i
+f[i;14]
 / 3037

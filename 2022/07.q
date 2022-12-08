@@ -7,7 +7,7 @@ cwd:`
 isls:0b
 
 while[count line:first lines;
-  if[line like "$ cd *";
+  if[line like "$ cd*";
     isls:0b;
     dir:`$last " " vs line;
     cwd:$[dir~`$"..";
