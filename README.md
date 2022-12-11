@@ -15,6 +15,7 @@
 | :star::star: | Day 8: Treetop Tree House                      | [q](2022/08.q) |
 | :star::star: | Day 9: Rope Bridge                             | [q](2022/09.q) |
 | :star::star: | Day 10: Cathode-Ray Tube                       | [q](2022/10.q) |
+| :star::star: | Day 11: Monkey in the Middle                   | [q](2022/11.q) |
 
 **2021**
 
