@@ -16,6 +16,7 @@
 | :star::star: | Day 9: Rope Bridge                             | [q](2022/09.q) |
 | :star::star: | Day 10: Cathode-Ray Tube                       | [q](2022/10.q) |
 | :star::star: | Day 11: Monkey in the Middle                   | [q](2022/11.q) |
+| :star::star: | Day 12: Hill Climbing Algorithm                | [q](2022/12.q) |
 
 **2021**
 
