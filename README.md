@@ -17,6 +17,7 @@
 | :star::star: | Day 10: Cathode-Ray Tube                       | [q](2022/10.q) |
 | :star::star: | Day 11: Monkey in the Middle                   | [q](2022/11.q) |
 | :star::star: | Day 12: Hill Climbing Algorithm                | [q](2022/12.q) |
+| :star::star: | Day 13: Distress Signal                        | [py](2022/13.py), [q](2022/13.q)|
 
 **2021**
 
