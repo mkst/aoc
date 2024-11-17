@@ -1,6 +1,26 @@
 # aoc
 [Advent Of Code](http://adventofcode.com/) solutions in a mixture of languages, predominantly Q/kdb+.
 
+**2023**
+
+| Stars        | Day                                            | Solutions      |
+|:------------:|:-----------------------------------------------|:---------------|
+| :star::star: | Day 1: Trebuchet?!                             | [q](2023/01.q) |
+| :star::star: | Day 2: Cube Conundrum                          | [q](2023/02.q) |
+| :star::star: | Day 3: Gear Ratios                             | [q](2023/03.q) |
+| :star::star: | Day 4: Scratchcards                            | [q](2023/04.q) |
+|              | Day 5:                                         |                |
+| :star::star: | Day 6: Wait For It                             | [q](2023/06.q) |
+| :star::star: | Day 7: Camel Cards                             | [q](2023/07.q) |
+| :star::star: | Day 8: Haunted Wasteland                       | [q](2023/08.q) |
+| :star::star: | Day 9: Mirage Maintenance                      | [q](2023/09.q) |
+|              | Day 10:                                        |                |
+|              | Day 11:                                        |                |
+|              | Day 12:                                        |                |
+|              | Day 13:                                        |                |
+|              | Day 14:                                        |                |
+| :star:       | Day 15: Lens Library                           | [q](2023/15.q) |
+
 **2022**
 
 | Stars        | Day                                            | Solutions      |
@@ -63,14 +83,6 @@
 | :star::star: | Day 15: Rambunctious Recitation                | [q](2020/15.q) |
 |              | Day 16:                                        |                |
 | :star::star: | Day 17: Conway Cubes                           | [q](2020/17.q) |
-|              | Day 18:                                        |                |
-|              | Day 19:                                        |                |
-|              | Day 20:                                        |                |
-|              | Day 21:                                        |                |
-|              | Day 22:                                        |                |
-|              | Day 23:                                        |                |
-|              | Day 24:                                        |                |
-|              | Day 25:                                        |                |
 
 **2019**
 
