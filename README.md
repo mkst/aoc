@@ -1,6 +1,13 @@
 # aoc
 [Advent Of Code](http://adventofcode.com/) solutions in a mixture of languages, predominantly Q/kdb+.
 
+
+**2024**
+
+| Stars        | Day                                            | Solutions      |
+|:------------:|:-----------------------------------------------|:---------------|
+| :star::star: | Day 1: Historian Hysteria                      | [q](2024/01.q) |
+
 **2023**
 
 | Stars        | Day                                            | Solutions      |
