@@ -7,6 +7,7 @@
 | Stars        | Day                                            | Solutions      |
 |:------------:|:-----------------------------------------------|:---------------|
 | :star::star: | Day 1: Historian Hysteria                      | [q](2024/01.q) |
+| :star::star: | Day 2: Red-Nosed Reports                       | [q](2024/02.q) |
 
 **2023**
 
