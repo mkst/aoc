@@ -8,6 +8,7 @@
 |:------------:|:-----------------------------------------------|:---------------|
 | :star::star: | Day 1: Historian Hysteria                      | [q](2024/01.q) |
 | :star::star: | Day 2: Red-Nosed Reports                       | [q](2024/02.q) |
+| :star::star: | Day 3: Mull It Over                            | [py](2024/03.py) [q](2024/03.q) |
 
 **2023**
 
