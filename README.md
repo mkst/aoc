@@ -10,6 +10,10 @@
 | :star::star: | Day 2: Red-Nosed Reports                       | [q](2024/02.q) |
 | :star::star: | Day 3: Mull It Over                            | [py](2024/03.py) [q](2024/03.q) |
 | :star::star: | Day 4: Ceres Search                            | [q](2024/04.q) |
+| :star::star: | Day 5: Print Queue                             | [q](2024/05.q) |
+| :star::star: |                                                |                |
+| :star::star: | Day 7: Bridge Repair                           | [q](2024/07.q) |
+| :star::star: | Day 8: Resonant Collinearity                   | [q](2024/08.q) |
 
 **2023**
 
