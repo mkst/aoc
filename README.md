@@ -11,10 +11,12 @@
 | :star::star: | Day 3: Mull It Over                            | [py](2024/03.py) [q](2024/03.q) |
 | :star::star: | Day 4: Ceres Search                            | [q](2024/04.q) |
 | :star::star: | Day 5: Print Queue                             | [q](2024/05.q) |
-| :star::star: |                                                |                |
+|              |                                                |                |
 | :star::star: | Day 7: Bridge Repair                           | [q](2024/07.q) |
 | :star::star: | Day 8: Resonant Collinearity                   | [q](2024/08.q) |
 | :star::star: | Day 9: Disk Fragmenter                         | [q](2024/09.q) |
+|              |                                                |                |
+| :star::star: | Day 11: Plutonian Pebbles                      | [q](2024/11.q) |
 
 **2023**
 
