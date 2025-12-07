@@ -2,6 +2,17 @@
 [Advent Of Code](http://adventofcode.com/) solutions in a mixture of languages, predominantly Q/kdb+.
 
 
+**2025**
+
+| Stars        | Day                                            | Solutions      |
+|:------------:|:-----------------------------------------------|:---------------|
+| :star::star: | Day 1: Secret Entrance                         | [q](2025/01.q) |
+| :star::star: | Day 2: Gift Shop                               | [q](2025/02.q) |
+| :star::star: | Day 2: Lobby                                   | [q](2025/03.q) |
+|              | Day 4:                                         |                |
+| :star::star: | Day 5: Cafeteria                               | [q](2025/05.q) |
+| :star::star: | Day 6: Trash Compactor                         | [q](2025/06.q) |
+
 **2024**
 
 | Stars        | Day                                            | Solutions      |
